@@ -2,6 +2,7 @@
 
 global score 
 score = 0
+
 #this is a function for a picture
 def house():
   print("You are outside an abandoned house")
@@ -12,6 +13,7 @@ def house():
   print("|    _    |  |       ")
   print("|[] | | []|[]|       ")
   print("|   | |   |  |       ")
+  
 #this is a function for a picture
 def tv():
   print("     O        O      ")
@@ -28,6 +30,7 @@ def tv():
   print("| |_______________| |")
   print("|___________________|")
   print("|___________________|")
+  
 #this is a function for a picture
 def shed():
   print("          _          ") 
@@ -40,6 +43,7 @@ def shed():
   print("  |___|||||||||___|  ")
   print("  |___|||||||||___|  ")
   print("  |___|||||||||___|  ")
+  
 #this is a function for a picture
 def knife():
   print("        / )          ")  
@@ -50,12 +54,14 @@ def knife():
   print("   ||/               ")                       
   print("   ||                ")
   print("  (||                ")
+  
 #this is a function for a picture
 def doors():
   print("  __ __   __ __      ")
   print(" |  |  | |  |  |     ")
   print(" | -|- | | -|- |     ")
   print(" |__|__| |__|__|     ")
+  
 #this is a function for the intro to my game
 def intro():
   print("Welcome to my game, you will go around an abandoned house and try not to die. If you die you have to start again. The aim of the game is to get out of the abandoned house with at least 20 points. If you die, you have to start again. Have fun:)")
@@ -65,7 +71,7 @@ def intro():
 
 from time import sleep
 
-#this is the function for the start of my game and a symbol
+
 def start():
   pass
   #i started a loop
