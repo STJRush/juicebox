@@ -1,7 +1,7 @@
 from time import sleep
 score = 0
 def goblinfight1n1():
-  print("The loot goblin swings its mace at you. It collides with you breaking all of your bones turning you to jellow, the last hear is it cackeling whilst saying 'I'm the victim here!' ")
+  print("The loot goblin swings its mace at you. It collides with you breaking all of your bones turning you to jellow, the last thing you hear is it cackeling whilst saying 'I'm the victim here!' ")
   sleep(2)
   choice5 = input("you have died, restart Y/Y")
   if choice5 == "Y":
