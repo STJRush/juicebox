@@ -32,3 +32,65 @@ def goblinfight1():
     print("NUH UH MISTER!")
     goblinfight1()
 
+def tutorialroom():
+  choice2 = input("Do you want to me to explain the tutorial to you?(Y/N ) ")
+  if choice2 =="Y": 
+   print(" Paul: You have chosen the tutorial, congrats. In this game, choices matter!")
+   
+   print ("Paul: During this game the choices you make as the player determine how you progress throughout the dungeon!")
+   
+   print("Paul: Enjoy ") 
+   goblinfight1()
+  
+  if choice2 == "N":
+    goblinfight1()
+  
+
+
+def outside():
+  while True:  
+    print("THE DUNGEON")
+
+    print("Welcome to dungeon. I am your guide  Paul the ultimate destroyer of world ruler of the forgotten kingdom and I will help you throughout your adventure in THE DUNGEON. ")
+
+    print("NOW ENTER THE DUNGEON!!! ")
+
+    choice1 = input ("You see a big door appear in front of you. What do you do?F(forward), B ( Run away like a lil poo poo brain")
+
+    if choice1 == "F" :
+      print("You enter the dungeon *scary noises")
+      tutorialroom()
+      break
+
+    elif choice1 == "B" :
+      print (" You run away like a lil poo poo brain ......")
+      break
+
+    else:
+      print (" NOT AN OPTION")
+    outside()
+
+
+
+
+while True:  
+    print("THE DUNGEON")
+
+    print("Welcome to THE DUNGEON!!!!! I am your guide  Paul the ultimate destroyer of world ruler of the forgotten kingdom and I will help you throughout your adventure in THE DUNGEON!!! ")
+
+    print("NOW ENTER THE DUNGEON!!! ")
+
+    choice1 = input ("You see a big door appear in front of you. What do you do?F(forward), B ( Run away like a lil poo poo brain")
+
+    if choice1 == "F" :
+      print("You enter the dungeon *scary noises")
+      tutorialroom()
+      break
+
+    elif choice1 == "B" :
+      print (" You run away like a lil poo poo brain ......")
+      break
+
+    else:
+      print (" NOT AN OPTION")
+    outside()
