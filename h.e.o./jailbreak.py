@@ -51,6 +51,6 @@ def corridor():
 
 
     else:
-      print("Print, NOT AN OPTION DUDE OR DUDETTE")
+      print("you cannot go there")
 
 jail_cell()
