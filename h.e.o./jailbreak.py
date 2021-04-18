@@ -32,7 +32,7 @@ def jail_cell():
 
     elif jail_cell_ == "b":
       print(Fore.YELLOW + "you stay behind bars. unable to do anything or see anyone.")
-      gameover()
+      gameover() 
       break
 
     else:
