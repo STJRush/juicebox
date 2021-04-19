@@ -32,7 +32,7 @@ def jail_cell():
 
     elif jail_cell_ == "b":
       print(Fore.YELLOW + "you stay behind bars. unable to do anything or see anyone.")
-      gameover() 
+      gameover()
       break
 
     else:
@@ -69,7 +69,7 @@ def corridor():
         time.sleep(0.07)
       print
 
-      #cafeteria()
+      cafeteria()
       break
 
 
@@ -90,4 +90,91 @@ def corridor():
         time.sleep(0.07)
       print
 
+
+def cafeteria():
+
+  while True:
+
+    print("   ")
+
+    for c in Fore.RED + "You're at the cafeteria, what do your do? r(go right), l(go left)":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+    print
+
+    choice1 = input("  ")
+
+    if choice1 == "r":
+     
+      for c in Fore.YELLOW + "random room here":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+
+      #cafeteria()
+      break
+
+
+    elif choice1 == "l":
+      for c in Fore.YELLOW + "another room":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+      #gym()
+      break
+
+
+    else:
+      for c in Fore.YELLOW + "Not an option buddy, get lost":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+      
+def gym():
+
+  while True:
+
+    print("   ")
+
+    for c in Fore.RED + "You're at the gym, what do your do? r(go right), l(go left)":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+    print
+
+    choice1 = input("  ")
+
+    if choice1 == "r":
+     
+      for c in Fore.YELLOW + "random room here":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+
+      #cafeteria()
+      break
+
+
+    elif choice1 == "l":
+      for c in Fore.YELLOW + "another room":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+      #gym()
+      break
+
+
+    else:
+      for c in Fore.YELLOW + "Not an option buddy, get lost":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+      
 jail_cell()
