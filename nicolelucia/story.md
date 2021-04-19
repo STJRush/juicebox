@@ -20,5 +20,12 @@
 # 1/2
 
 # 1:
-## 
+## You go through the strangely carved mahogany door.
+## You step in a room with a wet floor and cut electrical wires everywhere.
+## You are electricuted to death.
+# Start again.
+
+#2:
+## You walk into a dusty, old fashioned living room.
+## It's dead silent and you can hear your footsteps on the musty carpet.
 
