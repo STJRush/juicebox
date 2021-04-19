@@ -25,7 +25,7 @@
 ## You are electricuted to death.
 # Start again.
 
-#2:
+# 2:
 ## You walk into a dusty, old fashioned living room.
 ## It's dead silent and you can hear your footsteps on the musty carpet.
 
