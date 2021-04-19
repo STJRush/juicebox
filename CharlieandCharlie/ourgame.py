@@ -161,15 +161,39 @@ def garden():
   choice = input ("Which do you want to go to - l/d?")
 
   if choice == "l":
-    print("When you walk up to the lake it feels cold and eerie and someone from behind pushes you into it. You drowned... game over! ")
+    print("When you walk up to the lake it feels cold and eerie and someone from behind pushes you into it! ")
+    lake()
 
   if choice == "d":
     print("You made it out of the house alive. You won!")
   
   else:
     print("The mysterious figure cathces up and you died... game over!")
-
-
+    
+  
+def lake():
+  print("At the bottom of the lake you see a cave but it is very far down")
+  
+  choice = input ("Do you want to swim to the bottom or to the top of the lake - b/t?")
+  
+  if choice == "b":
+    print("You just about make it into the cave and open the door to it")
+    cave()
+    
+  elif choice == "t":
+    print("You make it out of the lake just in time and see that the big house is gone but instead there is a little cottage where the big house was?")
+    #top
+    
+  else:
+    print("You couldn't make a decision so you drowned... game over!")
+    
+    
+def cave():
+  print("When you open the door to the cave, there is no water inside but just torches on the wall leading down a long corridor")
+  
+  choice = input ()"
+        
+  
 outside()
 
 
