@@ -79,7 +79,7 @@ def corridor():
         sys.stdout.flush()
         time.sleep(0.07)
       print
-      #gym()
+      gym()
       break
 
 
