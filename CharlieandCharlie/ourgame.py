@@ -191,7 +191,30 @@ def lake():
 def cave():
   print("When you open the door to the cave, there is no water inside but just torches on the wall leading down a long corridor")
   
-  choice = input ()"
+  choice = input ("Do you want to walk down the long corridor or leave to go back to the surface of the lake - w/l?")
+  
+  if choice == "w":
+    print("You start walking down the long corridor that seems to be going on for ever")
+    corridor()
+    
+  elif choice == "l":
+    print("You leave and swim to the surface of the lake as fast as you can")
+    #top()
+    
+  else:
+    print("The mysterious figure cathces up and you died... game over!")
+    
+    
+def corridor():
+  print("After walking for what has seemed like hours you come across a door")
+  
+  choice = input ("Do you want to go through the door or keep walking - d/w?"
+                  
+  if choice == "d"
+    print("You open the door but it just leads to a wall so you continue walking")
+    #walking()
+                  
+  elif choice == "
         
   
 outside()
