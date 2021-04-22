@@ -11,7 +11,7 @@
 ## You suffer a fatal head injury.
 ## The ravens eat your lifeless body.
 # You died.
-# Start again.
+# START AGAIN.
 
 # Y:
 ## You go through the front door. 
@@ -23,9 +23,39 @@
 ## You go through the strangely carved mahogany door.
 ## You step in a room with a wet floor and cut electrical wires everywhere.
 ## You are electricuted to death.
-# Start again.
+# START AGAIN.
 
 # 2:
 ## You walk into a dusty, old fashioned living room.
 ## It's dead silent and you can hear your footsteps on the musty carpet.
+## You see an old looking TV in front of you and a glass door leading to the backgarden.
+## Do you go to the backgarden or switch on the TV?
+# Backgarden/TV
 
+# TV:
+## You switch on the TV and static pops up on the screen. After five seconds of just static, the screen turns black.
+## A little girl appears on the screen and stares at you.
+## She starts running at you and comes through the screen.
+## She grabs you and pulls you into the TV.
+## She proceeds to rip out your intestines and eat them.
+# You died.
+# START AGAIN.
+
+# Backgarden:
+## You open the glass door and step out onto the chilled patio. 
+## You are confronted with two options. 
+## You can either go on the grass or into the shed.
+## Which do you choose?
+# Grass/Shed
+
+# Grass: 
+## You step onto the dewy grass and immediately get stung by a bee.
+## You're allergic to bee stings and your body starts puffing up.
+## Your throat slowly closes up, causing you to slowly and painfully suffocate to death.
+## You died.
+# START AGAIN.
+
+# Shed:
+## You walk into the wooden shed and see shelves piled with gardening tools and building tools.
+## They're are cobwebs in every corner and everything is laced in dust.
+## You realise there's nothing here and retreat back inside.
