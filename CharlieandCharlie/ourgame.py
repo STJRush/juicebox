@@ -214,7 +214,9 @@ def corridor():
     print("You open the door but it just leads to a wall so you continue walking")
     #walking()
                   
-  elif choice == "
+  elif choice == "w":
+    print("You continue walking down the very long corridor")
+    #walking()
         
   
 outside()
