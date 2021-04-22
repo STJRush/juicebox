@@ -9,7 +9,7 @@ def outside():
     lobby() 
 
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure catches up and you died... game over!")
 
 
 def lobby():
@@ -46,7 +46,7 @@ def kitchen():
 
 def upstairs():
 
-  choice = input("You see 3 doors, which one wil you do you want to open? - 1/2/3")
+  choice = input("You see 3 doors, which one will you do you want to open? - 1/2/3")
 
   if choice == "1":
     print("You walk into a bedroom and see a ghost, it comes up to you and you died... game over!")
@@ -87,7 +87,7 @@ def three():
     upstairs()
 
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure catches up and you died... game over!")
 
 
 def kick():
@@ -107,7 +107,7 @@ def living():
     choice = input ("There is nothing interesting in the living room, will you stay or leave - s/l?")
 
     if choice == "s":
-      print("The mysterious figure cathces up and you died... game over!")
+      print("The mysterious figure catches up and you died... game over!")
       break
 
     elif choice == "l":
@@ -115,7 +115,7 @@ def living():
       break
     
     else:
-      print("The mysterious figure cathces up and you died... game over!")
+      print("The mysterious figure catches up and you died... game over!")
 
 
 def basement():
@@ -147,7 +147,7 @@ def close():
     garden()
 
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure catches up and you died... game over!")
 
 
 def zombies():
@@ -168,7 +168,7 @@ def garden():
     print("You made it out of the house alive. You won!")
   
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure catches up and you died... game over!")
     
   
 def lake():
@@ -202,7 +202,7 @@ def cave():
     #top()
     
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure catches up and you died... game over!")
     
     
 def corridor():
@@ -214,9 +214,7 @@ def corridor():
     print("You open the door but it just leads to a wall so you continue walking")
     #walking()
                   
-  elif choice == "w":
-    print("You continue walking down the very long corridor")
-    #walking()
+  elif choice == "
         
   
 outside()
