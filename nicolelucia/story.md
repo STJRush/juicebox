@@ -59,3 +59,44 @@
 ## You walk into the wooden shed and see shelves piled with gardening tools and building tools.
 ## They're are cobwebs in every corner and everything is laced in dust.
 ## You realise there's nothing here and retreat back inside.
+
+## You go back inside but the room has changed. 
+## Now, you have a choice to either go upstairs or to the kitchen.
+## Where will you go?
+# Upstairs/Kitchen
+
+# Kitchen:
+## You walk into a dingy kitchen and immediately trip over a misplaced stool. 
+## You fall and hit your head on the hard floor.
+## Your head starts gushing blood and you bleed to death.
+# START AGAIN.
+
+# Upstairs:
+## You walk up the creaky stairs and are faced with 4 doors.
+## Which will you choose?
+# 1/2/3/4
+
+# 1:
+## You go through door one and immediately drop dead from toxic fumes.
+# START AGAIN.
+
+# 2:
+## You walk through door two and get immediately transported back to the beginning of the forest trail. 
+## You can't seem to remember what just happened or why you came to the forest.
+## You brush it off and turn around, back home.
+# WIN?
+
+# 3:
+## You go through door three and walk into a pitch black room with a spotlight on a cloth covered table.
+## You walk up to the table and a glass casing appears. 
+## In it, are three diamonds.
+## You open the casing and gently take them in your hand.
+## You get transported back home suddenly.
+## You sell the diamonds and become a millionaire. 
+# WIN !!
+
+# 4:
+## You walk through the fourth door and get stabbed by the house owner. 
+## You get the police called on you and go to prison for breaking and entering.
+## Your wound gets infected in prison and you die.
+# START AGAIN.
