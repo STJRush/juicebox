@@ -9,7 +9,7 @@ def outside():
     lobby() 
 
   else:
-    print("The mysterious figure catches up and you died... game over!")
+    print("The mysterious figure cathces up and you died... game over!")
 
 
 def lobby():
@@ -46,7 +46,7 @@ def kitchen():
 
 def upstairs():
 
-  choice = input("You see 3 doors, which one will you do you want to open? - 1/2/3")
+  choice = input("You see 3 doors, which one wil you do you want to open? - 1/2/3")
 
   if choice == "1":
     print("You walk into a bedroom and see a ghost, it comes up to you and you died... game over!")
@@ -87,7 +87,7 @@ def three():
     upstairs()
 
   else:
-    print("The mysterious figure catches up and you died... game over!")
+    print("The mysterious figure cathces up and you died... game over!")
 
 
 def kick():
@@ -107,7 +107,7 @@ def living():
     choice = input ("There is nothing interesting in the living room, will you stay or leave - s/l?")
 
     if choice == "s":
-      print("The mysterious figure catches up and you died... game over!")
+      print("The mysterious figure cathces up and you died... game over!")
       break
 
     elif choice == "l":
@@ -115,7 +115,7 @@ def living():
       break
     
     else:
-      print("The mysterious figure catches up and you died... game over!")
+      print("The mysterious figure cathces up and you died... game over!")
 
 
 def basement():
@@ -147,7 +147,7 @@ def close():
     garden()
 
   else:
-    print("The mysterious figure catches up and you died... game over!")
+    print("The mysterious figure cathces up and you died... game over!")
 
 
 def zombies():
@@ -164,11 +164,11 @@ def garden():
     print("When you walk up to the lake it feels cold and eerie and someone from behind pushes you into it! ")
     lake()
 
-  if choice == "d":
+  elif choice == "d":
     print("You made it out of the house alive. You won!")
   
   else:
-    print("The mysterious figure catches up and you died... game over!")
+    print("The mysterious figure cathces up and you died... game over!")
     
   
 def lake():
@@ -181,8 +181,8 @@ def lake():
     cave()
     
   elif choice == "t":
-    print("You make it out of the lake just in time and see that the big house is gone but instead there is a little cottage where the big house was?")
-    #top
+    print("You make it out of the lake just in time and see that the big house is gone but instead there is a little cottage where the creepy house was?")
+    top
     
   else:
     print("You couldn't make a decision so you drowned... game over!")
@@ -199,23 +199,72 @@ def cave():
     
   elif choice == "l":
     print("You leave and swim to the surface of the lake as fast as you can")
-    #top()
+    top()
     
   else:
-    print("The mysterious figure catches up and you died... game over!")
+    print("The mysterious figure cathces up and you died... game over!")
     
     
 def corridor():
-  print("After walking for what has seemed like hours you come across a door")
+  print("You eventually reach the end of the corridor and there is a door")
   
-  choice = input ("Do you want to go through the door or keep walking - d/w?"
+  choice = input ("Do you want to go through the door or leave the cave and up to the surface of the lake - d/l?")
+  
+  if choice == "d":
+    print("You walk through the door and end up in the kitchen of the creepy house")
+    kitchen()
+    
+  elif choice == "l":
+    print("You leave and swim to the surface of the lake as fast as you can")
+    top()
+    
+  else:
+    print("The mysterious figure cathces up and you died... game over!")
+    
+   
+def top():
+  print("You make it out of the lake just in time and see that the big house is gone but instead there is a little cottage where the creepy house was?")
+  
+  choice = input ("Do you want to go into the cottage or leave through the driveway - c/d?"
                   
-  if choice == "d"
-    print("You open the door but it just leads to a wall so you continue walking")
-    #walking()
+  if choice == "c":
+    print("You enter the cottage and you are in a eery little hallway")
+    #hallway
                   
-  elif choice == "
-        
+  elif choice == "d":
+    print("You made it out of the house alive. You won!")
+                  
+  else:
+    print("The mysterious figure cathces up and you died... game over!")
+                  
+       
+def hallway():
+  print("In the hallway you see one door to your left and another to your right")
+                  
+  while True:
+                  
+    choice = input ("Which door do you want to go through - l/r?")
+
+    if choice == "l":
+      print("You walk into a little sitting room and see the mysterious figure in the corner, it runs up to you and you die... game over!")
+      break
+
+    elif choice == "r":
+      print("You enter a kitchen but see the mysterious figure and it runs up to you")
+      #figure
+      break
+                  
+    
+def figure():
+  print("What will you do?")
+                  
+  choice = input ("Do you want to run away or fight back - r/f?")
+                  
+  if choice == "r":
+    print("You made it out of the house alive. You won!")
+                  
+  elif choice == "f"
+                  
   
 outside()
 
