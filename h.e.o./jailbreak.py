@@ -298,7 +298,7 @@ def yard():
         sys.stdout.flush()
         time.sleep(0.07)
       print
-      #meeting_room()
+      meeting_room()
       break
 
     elif choice1 == "n":
@@ -358,9 +358,119 @@ def hospital():
         sys.stdout.flush()
         time.sleep(0.07)
       print
-      #lobby()
+      lobby()
       break
 
+    else:
+      for c in Fore.YELLOW + "Not an option buddy, get lost":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+
+def lobby():
+
+  while True:
+
+    print("   ")
+
+    for c in Fore.RED + "You're in the lobby, what do your do? n(go north), s(go south), w(go west), e(go east)":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+    print
+
+    choice1 = input("  ")
+
+    if choice1 == "w":
+     
+      for c in Fore.YELLOW + "random room here":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+
+      hospital()
+      break
+
+
+    elif choice1 == "s":
+      for c in Fore.YELLOW + "another room":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+      meeting_room()
+      break
+
+    elif choice1 == "e":
+      for c in Fore.YELLOW + "another room":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+      #guard_room()
+      break
+
+    elif choice1 == "n":
+      for c in Fore.YELLOW + "another room":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+      #exit()
+      break
+
+    else:
+      for c in Fore.YELLOW + "Not an option buddy, get lost":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+    
+def meeting_room():
+
+  while True:
+
+    print("   ")
+
+    #this gives you two options to walk while in the gym
+    for c in Fore.RED + "You're at the gym, what do your do? n(go north), w(go west)":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+    print
+
+    choice1 = input("  ")
+
+    #if you chose to go north this code will run
+    if choice1 == "n":
+     
+      #listen here buddy we aint finished alright?________________________________________
+      for c in Fore.YELLOW + "random room here":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+
+      lobby()
+      break
+
+    #if you chose west this will run
+    elif choice1 == "w":
+
+      #you ancounter :O, another room that isnt finished, my oh my you could have forseen this :)
+      for c in Fore.YELLOW + "another room":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+
+      print
+      yard()
+      break
+
+
+    #gotta stop them rebels so this code makes it so the game dosnt die because of a crash xD
     else:
       for c in Fore.YELLOW + "Not an option buddy, get lost":
         sys.stdout.write(c)
