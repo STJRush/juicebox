@@ -31,6 +31,46 @@ def goblinfight1():
   else:
     print("NUH UH MISTER!")
     goblinfight1()
+    
+    
+    
+    
+def dragonfight():
+  choice = input("You enter a new room and you hear a hollow rumble from a distance.THE DRIP DRAGON BURSTS THROUGH THE WALL!!!. He challenges you to a battle to the death. Do you wish to to accept his challenge? Y/N") 
+  
+  if choice== "Y":
+    dragonfight3y() 
+
+  if choice== "N":
+    dragonfight3n()
+
+def dragonfight3y():
+  print("The Drip Dragon says that whoever does the drippiest pose is the winner of this battle.")
+
+  sleep(1)
+
+  print("The Drip Dragon pulls out the drippiest pose you have ever seen.")
+
+  sleep(1)
+
+  print("You start spitting bars so valid that the Drip Dragon has nothing to do but self-combust")
+
+  sleep(1)
+
+  print("When the last couple of cold bars left your mouth, the Drip Dragon was unable to do anything, besides letting out a soft, SHEEEESSSHHH")
+  score + 1
+  
+
+def dragonfight3n():
+  print("The Drip Dragon shoots you lol. He did not burst through a wall to challenge you just for nothing to happen. tut tut tut you should have a least accepted his challenge")
+  
+  choice = input("You have died, Restart? Y/N")
+
+  if choice == "Y":
+    outside()
+
+  else:
+    print("So you think you have a choice huh hehe.")
 
 def tutorialroom():
   choice2 = input("Do you want to me to explain the tutorial to you?(Y/N ) ")
