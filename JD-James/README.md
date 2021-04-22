@@ -27,3 +27,32 @@ def outside():
 
     else:
       print("THAT IS NOT AN OPTION!")
+
+
+
+this is the second room of our haunted house
+it is the hallway through the front door if the user choses to go through the front door of the haunted house
+
+# HALLWAY ROOM
+def lobby():
+
+  while True:
+
+    print("YOU ARE NOW IN THE HALLWAY")
+    print("THE FRONT DOOR SUDDENLY SLAMS SHUT AND LOCKS BEHIND YOU!!!")
+
+    choice1 = input("You see a door (l)eft and (r)ight, what do your do")
+
+    if choice1 == "l":
+      print("You go left")
+      break
+      #sittingRoom()
+
+    elif choice1 == "r":
+      print("You go thorugh the right door")
+      break
+      #kitchen()
+
+    else:
+      print("THAT IS NOT AN OPTION!!")
+      
