@@ -133,7 +133,7 @@ def house():
     else:
       print("You walk away from the house and keep going. You trip on a sprawled tree root and hit your head on a large rock.You suffer a fatal head injury.The ravens eat your lifeless body.You died.START AGAIN.")
       score = score + 0
-      first()
+      start()
         
 #this is a function for a picture
 def doors():
