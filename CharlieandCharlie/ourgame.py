@@ -9,7 +9,7 @@ def outside():
     lobby() 
 
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure cathces up and you died... Game over!")
 
 
 def lobby():
@@ -25,7 +25,7 @@ def lobby():
     living()
 
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure cathces up and you died... Game over!")
 
 
 def kitchen():
@@ -41,7 +41,7 @@ def kitchen():
     upstairs()
 
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure cathces up and you died... Game over!")
 
 
 def upstairs():
@@ -49,7 +49,7 @@ def upstairs():
   choice = input("You see 3 doors, which one wil you do you want to open? - 1/2/3")
 
   if choice == "1":
-    print("You walk into a bedroom and see a ghost, it comes up to you and you died... game over!")
+    print("You walk into a bedroom and see a ghost, it comes up to you and you died... Game over!")
 
   elif choice == "2":
     print("You go into a bedroom and see another door")
@@ -60,7 +60,7 @@ def upstairs():
     three()
 
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure cathces up and you died... Game over!")
 
 
 def two():
@@ -72,7 +72,7 @@ def two():
     basement()
 
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure cathces up and you died... Game over!")
 
 
 def three():
@@ -87,7 +87,7 @@ def three():
     upstairs()
 
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure cathces up and you died... Game over!")
 
 
 def kick():
@@ -107,7 +107,7 @@ def living():
     choice = input ("There is nothing interesting in the living room, will you stay or leave - s/l?")
 
     if choice == "s":
-      print("The mysterious figure cathces up and you died... game over!")
+      print("The mysterious figure cathces up and you died... Game over!")
       break
 
     elif choice == "l":
@@ -115,7 +115,7 @@ def living():
       break
     
     else:
-      print("The mysterious figure cathces up and you died... game over!")
+      print("The mysterious figure cathces up and you died... Game over!")
 
 
 def basement():
@@ -132,7 +132,7 @@ def basement():
     garden()
 
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure cathces up and you died... Game over!")
 
 
 def close():
@@ -147,11 +147,11 @@ def close():
     garden()
 
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure cathces up and you died... Game over!")
 
 
 def zombies():
-  print("The zombies didn't like you not social distancing so they killed you... game over!")
+  print("The zombies didn't like you not social distancing so they killed you... Game over!")
 
 
 
@@ -168,7 +168,7 @@ def garden():
     print("You made it out of the house alive. You won!")
   
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure cathces up and you died... Game over!")
     
   
 def lake():
@@ -185,7 +185,7 @@ def lake():
     top
     
   else:
-    print("You couldn't make a decision so you drowned... game over!")
+    print("You couldn't make a decision so you drowned... Game over!")
     
     
 def cave():
@@ -202,7 +202,7 @@ def cave():
     top()
     
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure cathces up and you died... Game over!")
     
     
 def corridor():
@@ -229,13 +229,13 @@ def top():
                   
   if choice == "c":
     print("You enter the cottage and you are in a eery little hallway")
-    #hallway
+    hallway()
                   
   elif choice == "d":
     print("You made it out of the house alive. You won!")
                   
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure cathces up and you died... Game over!")
                   
        
 def hallway():
@@ -251,7 +251,7 @@ def hallway():
 
     elif choice == "r":
       print("You enter a kitchen but see the mysterious figure and it runs up to you")
-      #figure
+      figure()
       break
                   
     
@@ -264,12 +264,9 @@ def figure():
     print("You made it out of the house alive. You won!")
                   
   elif choice == "f"
+     print("He bet you up and you died... Game over!")
                   
   
 outside()
-
-
-
-
-
-  
+                  
+                  
