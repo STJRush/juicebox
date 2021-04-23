@@ -291,7 +291,8 @@ def upstairs():
   while True:
     print("You walk up the creaky stairs and are faced with 4 doors.")
 
-    knife()
+    doors()
+    doors()
 
     choice = input(" Which will you choose?1/2/3/4")
 
@@ -334,11 +335,11 @@ intro()
 
 start()
 
-first()
-
 trees()
-        
+
 house()
+
+first()
 
 doorsone()
 
@@ -348,4 +349,10 @@ shedtwo()
 
 kitchen()
  
-start()
+upstairs()
+
+
+
+finalscore()
+
+
