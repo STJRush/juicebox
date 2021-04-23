@@ -52,6 +52,7 @@ def start():
       
 #this is a function for a picture
 def trees():
+   print("                                                                   .     ")
   print("                                                                   .     ")
   print("                                                        .         ;      ")
   print("                           .              .              ;%     ;;       ")
