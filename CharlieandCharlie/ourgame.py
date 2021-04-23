@@ -277,7 +277,7 @@ def corridor():
 def top():
   print("You make it out of the lake just in time and see that the big house is gone but instead there is a little cottage where the creepy house was?")
   
-  choice = input ("Do you want to go into the cottage or leave through the driveway - c/d?"
+  choice = input ("Do you want to go into the cottage or leave through the driveway - c/d?")
                   
   if choice == "c":
     print("You enter the cottage and you are in a eery little hallway")
@@ -315,7 +315,7 @@ def figure():
   if choice == "r":
     print("You made it out of the house alive. You won!")
                   
-  elif choice == "f"
+  elif choice == "f":
      print("He bet you up and you died... Game over!")
                   
   
