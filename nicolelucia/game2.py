@@ -285,6 +285,47 @@ def kitchen():
 
     else :
       kitchen()
+      
+def upstairs():
+  #i started a loop
+  while True:
+    print("You walk up the creaky stairs and are faced with 4 doors.")
+
+    knife()
+
+    choice = input(" Which will you choose?1/2/3/4")
+
+    if choice =="3":
+        print("You go through door three and walk into a pitch black room with a spotlight on a cloth covered table.You walk up to the table and a glass casing appears. In it, are three diamonds.You open the casing and gently take them in your hand.You get transported back home suddenly.")
+        global score
+        score = score + 5
+        break
+        #i put break to stop the loop
+        doors()
+        doors()
+
+    if choice =="2" :
+        print("You walk through door two and get immediately transported back to the beginning of the forest trail. You can't seem to remember what just happened or why you came to the forest.You brush it off and turn around, back home. start again?")
+        global score
+        score = score + 0
+        start()
+        
+    if choice =="1" :
+        print("You go through door one and immediately drop dead from toxic fumes.START AGAIN.")
+        global score
+        score = score + 0
+        start()
+        
+    if choice =="4" :
+        print("You walk through the fourth door and get stabbed by the house owner. You get the police called on you and go to prison for breaking and entering.Your wound gets infected in prison and you die.START AGAIN.")
+        global score
+        score = score + 0
+        start()
+        
+    else :
+      upstairs()
+
+  
 
 def finalscore():
   print("Your final score is..." , score)
