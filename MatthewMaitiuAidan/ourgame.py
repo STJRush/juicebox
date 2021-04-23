@@ -58,6 +58,9 @@ def dragonfight3y():
   sleep(1)
 
   print("When the last couple of cold bars left your mouth, the Drip Dragon was unable to do anything, besides letting out a soft, SHEEEESSSHHH")
+  
+  print("You gained another point, WOOHOO!!!")
+  
   score + 1
   
 
