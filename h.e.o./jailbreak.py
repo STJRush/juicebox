@@ -109,7 +109,7 @@ def cafeteria():
     print("   ")
 
     #this code gives you two options to walk
-    for c in Fore.RED + "You're at the cafeteria, what do your do? r(go right), l(go left)":
+    for c in Fore.RED + "You're at the cafeteria, what do your do? n(go north), s(go south)":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
@@ -118,7 +118,7 @@ def cafeteria():
     choice1 = input("  ")
 
     #this code says if you chose right _______ will happen
-    if choice1 == "r":
+    if choice1 == "n":
       
       #ignore this for now please as this is incomplete___________________________
       for c in Fore.YELLOW + "random room here":
@@ -127,12 +127,12 @@ def cafeteria():
         time.sleep(0.07)
       print
 
-      #cafeteria()
+      yard()
       break
 
 
     #this code is if you chose to go left
-    elif choice1 == "l":
+    elif choice1 == "s":
 
       #it says another room as this is incomplete, ignore this _______________________________________
       for c in Fore.YELLOW + "another room":
@@ -141,7 +141,7 @@ def cafeteria():
         time.sleep(0.07)
       print
 
-      #gym()
+      corridor()
       break
 
 
@@ -257,12 +257,14 @@ def library():
         time.sleep(0.07)
       print
 
+#this is the code for the yard section
 def yard():
 
   while True:
 
     print("   ")
 
+    #decide north, south, west or east... the choice is yours (matrix reference pog)
     for c in Fore.RED + "You're in the yard, what do your do? n(go north), s(go south), w(go west), e(go east)":
         sys.stdout.write(c)
         sys.stdout.flush()
@@ -271,8 +273,10 @@ def yard():
 
     choice1 = input("  ")
 
+    #it seems you chose west
     if choice1 == "w":
-     
+      
+      #lmao not finished yet nerd
       for c in Fore.YELLOW + "random room here":
         sys.stdout.write(c)
         sys.stdout.flush()
@@ -283,33 +287,42 @@ def yard():
       break
 
 
+    #hmmm you chose south lmao nerd (you a nerd as you are reading the code lmao)
     elif choice1 == "s":
+
+      #we aint finished so BEGONE THOT
       for c in Fore.YELLOW + "another room":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
+
       print
       cafeteria()
       break
 
+    #it seems you chose east (help riting comments is a pain)
     elif choice1 == "e":
       for c in Fore.YELLOW + "another room":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
+
       print
       meeting_room()
       break
 
+    #you know what imma say "It seems you chose north" so begone nerd
     elif choice1 == "n":
       for c in Fore.YELLOW + "another room":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
+
       print
       hospital()
       break
 
+    #hahahahahah you fool you absolute imbecile you cant choose that HAHAHAHAHA
     else:
       for c in Fore.YELLOW + "Not an option buddy, get lost":
         sys.stdout.write(c)
@@ -317,12 +330,14 @@ def yard():
         time.sleep(0.07)
       print
 
+#this is the code for the yard section
 def hospital():
 
   while True:
 
     print("   ")
 
+    #pain you choose which direction west, south, east? i dont care nerd
     for c in Fore.RED + "You're at the hospital, what do your do? w(go west), s(go south) e(go east)":
         sys.stdout.write(c)
         sys.stdout.flush()
@@ -331,8 +346,10 @@ def hospital():
 
     choice1 = input("  ")
 
+    #you are still reading? welp you the user chose west lmao nerd get rekt
     if choice1 == "w":
-     
+      
+      #we are not finished but we would like to talk to you about your car extendency warranty
       for c in Fore.YELLOW + "random room here":
         sys.stdout.write(c)
         sys.stdout.flush()
@@ -343,14 +360,19 @@ def hospital():
       break
 
 
+    #ha only nerds choose south so you a nerd
     elif choice1 == "s":
+
+      #god damn we aint finished yet? oh god
       for c in Fore.YELLOW + "another room":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
+
       print
       yard()
       break
+
 
     elif choice1 == "e":
       for c in Fore.YELLOW + "another room":
@@ -435,7 +457,7 @@ def meeting_room():
     print("   ")
 
     #this gives you two options to walk while in the gym
-    for c in Fore.RED + "You're at the gym, what do your do? n(go north), w(go west)":
+    for c in Fore.RED + "You're at the meeting room, what do your do? n(go north), w(go west)":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
