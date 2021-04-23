@@ -54,5 +54,5 @@ def lobby():
       #kitchen()
 
     else:
-      print("THAT IS NOT AN OPTION!!")
+      print("THAT IS NOT AN OPTION!")
       
