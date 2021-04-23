@@ -56,3 +56,10 @@ def lobby():
     else:
       print("THAT IS NOT AN OPTION!")
       
+Today I added a score keeper to our haunted house game.
+
+#This is a score keeper to keep track of the points the playe earns during the game.
+#Players earn points for making the correct decisions.
+
+global score 
+score = 0
