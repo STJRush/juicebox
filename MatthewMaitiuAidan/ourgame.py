@@ -1,4 +1,6 @@
 from time import sleep
+import pygame
+pygame.init()
 score = 0
 def goblinfight1n1():
   print("The loot goblin swings its mace at you. It collides with you breaking all of your bones turning you to jellow, the last thing you hear is it cackeling whilst saying 'I'm the victim here!' ")
