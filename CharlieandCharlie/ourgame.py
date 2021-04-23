@@ -1,5 +1,13 @@
 print ("You are being chased by a mysterious figure and you come across a creepy looking house")
 
+print("      `'::::.")
+print("        _____A_")
+print("       /      /\")
+print("    __/__/\__/  \___")
+print("---/__|" '' "| /___/\----")
+print("   |''|"'||'"| |' '||")
+print("   `""`""))""`"`""""`")
+
 def outside():
   
   choice = input ("Would you like to go into it to? - y/n?")
@@ -50,6 +58,11 @@ def upstairs():
 
   if choice == "1":
     print("You walk into a bedroom and see a ghost, it comes up to you and you died... Game over!")
+    print(" .-.")
+    print("(o o) boo!")
+    print("| O \")
+    print(" \   \")
+    print("  `~~~'")
 
   elif choice == "2":
     print("You go into a bedroom and see another door")
@@ -162,6 +175,27 @@ def garden():
 
   if choice == "l":
     print("When you walk up to the lake it feels cold and eerie and someone from behind pushes you into it! ")
+    print("     .-.                                    ,-.")
+    print("  .-(   )-.                              ,-(   )-.")
+    print(" (     __) )-.                        ,-(_      __)")
+    print("  `-(       __)                      (_    )  __)-'")
+    print("    `(____)-',                        `-(____)-'")
+    print("  - -  :   :  - -")
+    print("      / `-' \")
+    print("    ,    |   .")
+    print("         .                         _")
+    print("                                  >')")
+    print("               _   /              (\\         (W)")
+    print("              =') //               = \     -. `|'")
+    print("               ))////)             = ,-      \(| ,-")
+    print("              ( (///))           ( |/  _______\|/____")
+    print("~~~~~~~~~~~~~~~`~~~~'~~~~~~~~~~~~~\|,-'::::::::::::::")
+    print("            _                 ,----':::::::::::::::::")
+    print("         {><_'c   _      _.--':MJP:::::::::::::::::::")
+    print("__,'`----._,-. {><_'c  _-':::::::::::::::::::::::::::")
+    print(":.:.:.:.:.:.:.\_    ,-'.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:")
+    print(".:.:.:.:.:.:.:.:`--'.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.")
+    print(".....................................................")
     lake()
 
   elif choice == "d":
@@ -182,7 +216,26 @@ def lake():
     
   elif choice == "t":
     print("You make it out of the lake just in time and see that the big house is gone but instead there is a little cottage where the creepy house was?")
-    top
+    print("                          (   )")
+    print("                          (    )")
+    print("                           (    )")
+    print("                          (    )")
+    print("                            )  )")
+    print("                           (  (                  /\")
+    print("                            (_)                 /  \  /\")
+    print("                    ________[_]________      /\/    \/  \")
+    print("           /\      /\        ______    \    /   /\/\  /\/\")
+    print("          /  \    //_\       \    /\    \  /\/\/    \/    \")
+    print("  /\    / /\/\  //___\       \__/  \    \/
+    print("  /  \  /\/    \//_____\       \ |[]|     \")
+    print(" /\/\/\/       //_______\       \|__|      \v
+    print("/      \      /XXXXXXXXXX\                  \v
+    print("        \    /_I_II  I__I_\__________________\v
+    print("               I_I|  I__I_____[]_|_[]_____I")
+    print("              I_II  I__I_____[]_|_[]_____I")
+    print("               I II__I  I     XXXXXXX     I")
+    print("            ~~~~~"   "~~~~~~~~~~~~~~~~~~~~~~~~")
+    top()
     
   else:
     print("You couldn't make a decision so you drowned... Game over!")
