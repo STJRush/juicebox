@@ -2,11 +2,10 @@ print ("You are being chased by a mysterious figure and you come across a creepy
 
 print("      `'::::.")
 print("        _____A_")
-print("       /      /\")
+print("       /      /\.")
 print("    __/__/\__/  \___")
 print("---/__|" '' "| /___/\----")
 print("   |''|"'||'"| |' '||")
-print("   `""`""))""`"`""""`")
 
 def outside():
   
@@ -60,8 +59,8 @@ def upstairs():
     print("You walk into a bedroom and see a ghost, it comes up to you and you died... Game over!")
     print(" .-.")
     print("(o o) boo!")
-    print("| O \")
-    print(" \   \")
+    print("| O \./")
+    print(" \   \.")
     print("  `~~~'")
 
   elif choice == "2":
@@ -181,7 +180,7 @@ def garden():
     print("  `-(       __)                      (_    )  __)-'")
     print("    `(____)-',                        `-(____)-'")
     print("  - -  :   :  - -")
-    print("      / `-' \")
+    print("      / `-' \.")
     print("    ,    |   .")
     print("         .                         _")
     print("                                  >')")
@@ -221,16 +220,16 @@ def lake():
     print("                           (    )")
     print("                          (    )")
     print("                            )  )")
-    print("                           (  (                  /\")
-    print("                            (_)                 /  \  /\")
-    print("                    ________[_]________      /\/    \/  \")
-    print("           /\      /\        ______    \    /   /\/\  /\/\")
-    print("          /  \    //_\       \    /\    \  /\/\/    \/    \")
-    print("  /\    / /\/\  //___\       \__/  \    \/
-    print("  /  \  /\/    \//_____\       \ |[]|     \")
-    print(" /\/\/\/       //_______\       \|__|      \v
-    print("/      \      /XXXXXXXXXX\                  \v
-    print("        \    /_I_II  I__I_\__________________\v
+    print("                           (  (                  /\.")
+    print("                            (_)                 /  \  /\.")
+    print("                    ________[_]________      /\/    \/  \.")
+    print("           /\      /\        ______    \    /   /\/\  /\/\.")
+    print("          /  \    //_\       \    /\    \  /\/\/    \/    \.")
+    print("  /\    / /\/\  //___\       \__/  \    \/.")
+    print("  /  \  /\/    \//_____\       \ |[]|     \.")
+    print(" /\/\/\/       //_______\       \|__|      \v")
+    print("/      \      /XXXXXXXXXX\                  \v")
+    print("        \    /_I_II  I__I_\__________________\v")
     print("               I_I|  I__I_____[]_|_[]_____I")
     print("              I_II  I__I_____[]_|_[]_____I")
     print("               I II__I  I     XXXXXXX     I")
@@ -321,5 +320,3 @@ def figure():
                   
   
 outside()
-                  
-                  
