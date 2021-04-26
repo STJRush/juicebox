@@ -95,8 +95,32 @@
 ## You walk up to the table and a glass casing appears. 
 ## In it, are three diamonds.
 ## You open the casing and gently take them in your hand.
-## You get transported  suddenly.
-## You sell the diamonds and become a millionaire. 
+## Suddenly, a hole opens in the floor and you fall through.
+## You're now in a dark, gloomy and cold unknown place with seemingly no way out.
+## You take a loud step and suddenly the room is lit up dimly. 
+## You're in a dingy, poorly lit, dirty, large stone hallway.
+## You look at the map you have scunched tightly in your fist and realise that it's filled in. 
+## There seems to be only one way to follow.
+## You have no choice but to follow it. You walk straight until you get to a large, still dimly lit room.
+## There are people in large, dragged robes. Their faces aren't visible.
+## You've been led to a cult. This is their plan to recruit new members. 
+## You have the choice, do you join them?
+# Y/N
+
+# N:
+## 5 of them grab you and strap you down to a large table with a pentagram. 
+## You're stabbed and your blood is drained.
+## You become their human sacrifce.
+# You died.
+# START AGAIN.
+
+# Y:
+## They welcome you as one of them. 
+## As you're getting your robe sewn onto your body, your three diamons fall out of your pocket.
+## You find out that they're actually the three sacremental stones to bring a demon up from the gates of hell. 
+## They're taken from you and the demon is summoned. 
+## The world is destroyed and put under fear and dictatorship. 
+## The cult are now second in command to the demon, controller of all humans.
 
 # 4:
 ## You walk through the fourth door and get stabbed by the house owner. 
