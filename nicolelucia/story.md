@@ -15,6 +15,8 @@
 
 # Y:
 ## You go through the front door. 
+## You slip on something and thump to the floor. 
+## On the hard wood floor, you find a seemingly old looking map
 ## Once you go in you see a long, ominous hallway containing two doors. 
 ## Do you go through door 1 or 2?
 # 1/2
