@@ -81,7 +81,7 @@ def corridor():
       break
 
 
-    #if you chose to walk west this code will run
+    #if you chose to walk west this code will run lmao
     elif choice1 == "w":
 
       #this code says if you chose west you will find a gym
