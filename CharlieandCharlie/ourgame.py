@@ -17,6 +17,11 @@ def outside():
 
   else:
     print("The mysterious figure cathces up and you died... Game over!")
+    print(" .-.")
+    print("(o o) boo!")
+    print("| O \./")
+    print(" \   \.")
+    print("  `~~~'")
 
 
 def lobby():
@@ -33,7 +38,12 @@ def lobby():
 
   else:
     print("The mysterious figure cathces up and you died... Game over!")
-
+    print(" .-.")
+    print("(o o) boo!")
+    print("| O \./")
+    print(" \   \.")
+    print("  `~~~'")
+    
 
 def kitchen():
   choice = input ("In the kitchen you see a stairs going up and a stairs going down, which way do you want to go? - u/d?")
@@ -49,6 +59,11 @@ def kitchen():
 
   else:
     print("The mysterious figure cathces up and you died... Game over!")
+    print(" .-.")
+    print("(o o) boo!")
+    print("| O \./")
+    print(" \   \.")
+    print("  `~~~'")
 
 
 def upstairs():
@@ -73,6 +88,11 @@ def upstairs():
 
   else:
     print("The mysterious figure cathces up and you died... Game over!")
+    print(" .-.")
+    print("(o o) boo!")
+    print("| O \./")
+    print(" \   \.")
+    print("  `~~~'")
 
 
 def two():
@@ -85,6 +105,11 @@ def two():
 
   else:
     print("The mysterious figure cathces up and you died... Game over!")
+    print(" .-.")
+    print("(o o) boo!")
+    print("| O \./")
+    print(" \   \.")
+    print("  `~~~'")
 
 
 def three():
@@ -100,6 +125,11 @@ def three():
 
   else:
     print("The mysterious figure cathces up and you died... Game over!")
+    print(" .-.")
+    print("(o o) boo!")
+    print("| O \./")
+    print(" \   \.")
+    print("  `~~~'")
 
 
 def kick():
@@ -120,6 +150,11 @@ def living():
 
     if choice == "s":
       print("The mysterious figure cathces up and you died... Game over!")
+      print(" .-.")
+      print("(o o) boo!")
+      print("| O \./")
+      print(" \   \.")
+      print("  `~~~'")
       break
 
     elif choice == "l":
@@ -128,6 +163,11 @@ def living():
     
     else:
       print("The mysterious figure cathces up and you died... Game over!")
+      print(" .-.")
+      print("(o o) boo!")
+      print("| O \./")
+      print(" \   \.")
+      print("  `~~~'")
 
 
 def basement():
@@ -145,6 +185,11 @@ def basement():
 
   else:
     print("The mysterious figure cathces up and you died... Game over!")
+    print(" .-.")
+    print("(o o) boo!")
+    print("| O \./")
+    print(" \   \.")
+    print("  `~~~'")
 
 
 def close():
@@ -160,11 +205,15 @@ def close():
 
   else:
     print("The mysterious figure cathces up and you died... Game over!")
+    print(" .-.")
+    print("(o o) boo!")
+    print("| O \./")
+    print(" \   \.")
+    print("  `~~~'")
 
 
 def zombies():
   print("The zombies didn't like you not social distancing so they killed you... Game over!")
-
 
 
 def garden():
@@ -202,6 +251,11 @@ def garden():
   
   else:
     print("The mysterious figure cathces up and you died... Game over!")
+    print(" .-.")
+    print("(o o) boo!")
+    print("| O \./")
+    print(" \   \.")
+    print("  `~~~'")
     
   
 def lake():
@@ -255,6 +309,11 @@ def cave():
     
   else:
     print("The mysterious figure cathces up and you died... Game over!")
+    print(" .-.")
+    print("(o o) boo!")
+    print("| O \./")
+    print(" \   \.")
+    print("  `~~~'")
     
     
 def corridor():
@@ -272,6 +331,11 @@ def corridor():
     
   else:
     print("The mysterious figure cathces up and you died... game over!")
+    print(" .-.")
+    print("(o o) boo!")
+    print("| O \./")
+    print(" \   \.")
+    print("  `~~~'")
     
    
 def top():
@@ -288,6 +352,11 @@ def top():
                   
   else:
     print("The mysterious figure cathces up and you died... Game over!")
+    print(" .-.")
+    print("(o o) boo!")
+    print("| O \./")
+    print(" \   \.")
+    print("  `~~~'")
                   
        
 def hallway():
@@ -303,6 +372,11 @@ def hallway():
 
     elif choice == "r":
       print("You enter a kitchen but see the mysterious figure and it runs up to you")
+       print(".-.")
+      print("(o o) boo!")
+      print("| O \./")
+      print(" \   \.")
+      print("  `~~~'")
       figure()
       break
                   
