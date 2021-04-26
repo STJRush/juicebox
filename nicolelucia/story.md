@@ -16,8 +16,10 @@
 # Y:
 ## You go through the front door. 
 ## You slip on something and thump to the floor. 
-## On the hard wood floor, you find a seemingly old looking map
-## Once you go in you see a long, ominous hallway containing two doors. 
+## On the hard wood floor, you find a seemingly old looking map.
+## The map is completely blank. You decide to keep it in case and continue your journey. 
+## You get up, map in hand and take a look at your surroundings.
+## You see a long, ominous hallway containing two doors. 
 ## Do you go through door 1 or 2?
 # 1/2
 
@@ -95,7 +97,6 @@
 ## You open the casing and gently take them in your hand.
 ## You get transported  suddenly.
 ## You sell the diamonds and become a millionaire. 
-# WIN !!
 
 # 4:
 ## You walk through the fourth door and get stabbed by the house owner. 
