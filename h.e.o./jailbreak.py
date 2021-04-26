@@ -3,7 +3,7 @@ from colorama import Fore
 import sys, time
 from time import sleep
 
-
+sleep(0)
 #the code for the jailcell part of the game
 def jail_cell():
 
@@ -43,13 +43,9 @@ def jail_cell():
     else:
       print(Fore.YELLOW + "you can't go there.")
 
-sleep(2)
-
 #the code for the gameover section of "jailcell"
 def gameover():
   print(Fore.YELLOW + "you die of depression in a jail where your soul will be trapped till the end of this universe.")
-
-sleep(2)
 
 #the code for section two, the corridot of left and right
 def corridor():
@@ -81,7 +77,7 @@ def corridor():
       break
 
 
-    #if you chose to walk west this code will run lmao
+    #if you chose to walk west this code will run
     elif choice1 == "w":
 
       #this code says if you chose west you will find a gym
@@ -431,7 +427,7 @@ def lobby():
         sys.stdout.flush()
         time.sleep(0.07)
       print
-      #guard_room()
+      guards_office()
       break
 
     elif choice1 == "n":
@@ -440,7 +436,7 @@ def lobby():
         sys.stdout.flush()
         time.sleep(0.07)
       print
-      #exit()
+      exit_door()
       break
 
     else:
@@ -499,4 +495,44 @@ def meeting_room():
         sys.stdout.flush()
         time.sleep(0.07)
       print
+
+def guards_office():
+
+  while True:
+
+    print("   ")
+
+    #this gives you two options to walk while in the gym
+    for c in Fore.RED + "You're at the guards office, what do your do? w(go west)":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+    print
+
+    choice1 = input("  ")
+
+    #if you chose to go north this code will run
+    if choice1 == "w":
+     
+      #listen here buddy we aint finished alright?________________________________________
+      for c in Fore.YELLOW + "random room here":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+
+      lobby()
+      break
+
+    #gotta stop them rebels so this code makes it so the game dosnt die because of a crash xD
+    else:
+      for c in Fore.YELLOW + "Not an option buddy, get lost":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+
+def exit_door():
+  print(Fore.YELLOW + "u win lol")
+  
 jail_cell()
