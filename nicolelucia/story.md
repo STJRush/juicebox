@@ -91,7 +91,7 @@
 ## You walk up to the table and a glass casing appears. 
 ## In it, are three diamonds.
 ## You open the casing and gently take them in your hand.
-## You get transported back home suddenly.
+## You get transported  suddenly.
 ## You sell the diamonds and become a millionaire. 
 # WIN !!
 
