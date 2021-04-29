@@ -35,4 +35,13 @@ You open it and it leads to the kitchen of the creepy house.
 You feel very creeped out so you decide to go out of the cave and back out of the lack to the garden.
 
 When you get out of the lake you see a little cottage instead of the house.
-You decide to go into it and you see a kitchen to your
+You decide to go into it and you see a kitchen to your right which you go into but the mysterious figure who was chasing you early is there so you run into the living room where he is also there.
+
+You run out of the house as fast as you can and you see the driveway and run out of it and run for hours until you get home.
+
+The mysterious figure is no where to be seen.
+
+You go straight to bed as you are very tired from today, you lay in bed and a hand grabs your leg and pulls you under it.
+It's the mysterious figure from the creepy house.
+
+YOU DIED!
