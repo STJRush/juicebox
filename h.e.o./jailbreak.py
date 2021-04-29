@@ -12,7 +12,7 @@ def Encounterr():
   EnemyEncounter = random.randint(1, 3)
   
 
-    #the code for the actual fight
+  #the code for the actual fight
   def fight(): 
     random_number = random.randint(1, 10)
     random_minimum = random.randint(2, 9)
@@ -333,6 +333,7 @@ def library():
       break
 
 
+      
     else:
       for c in Fore.YELLOW + "Not an option buddy, get lost":
         sys.stdout.write(c)
@@ -372,6 +373,7 @@ def yard():
       break
 
 
+      
     #hmmm you chose south lmao nerd (you a nerd as you are reading the code lmao)
     elif choice1 == "s":
 
@@ -385,6 +387,7 @@ def yard():
       cafeteria()
       break
 
+      
     #it seems you chose east (help riting comments is a pain)
     elif choice1 == "e":
       for c in Fore.YELLOW + "you walk east. you remember this room. it is the room where you met your loved ones frequently.":
@@ -396,6 +399,7 @@ def yard():
       meeting_room()
       break
 
+      
     #you know what imma say "It seems you chose north" so begone nerd
     elif choice1 == "n":
       for c in Fore.YELLOW + "you walk through a dorway. you see hospital beds and surgery equipment.":
@@ -407,7 +411,8 @@ def yard():
       hospital()
       break
 
-    #hahahahahah you fool you absolute imbecile you cant choose that HAHAHAHAHA
+      
+    #hahahahyou fool you absolute imbecile you cant choose that HAHAHAHAHA
     else:
       for c in Fore.YELLOW + "Not an option buddy, get lost":
         sys.stdout.write(c)
@@ -415,6 +420,7 @@ def yard():
         time.sleep(0.07)
       print
 
+      
 #this is the code for the yard section
 def hospital():
 
