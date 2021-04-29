@@ -4,7 +4,84 @@ import sys, time
 from time import sleep
 import random
 
-sleep(0)
+#code for encounters
+def Encounterr():
+  
+  print("   ")
+  #the small line which chooses a random number between 1 and 3 to decide if you get an encounter
+  EnemyEncounter = random.randint(1, 3)
+  
+
+    #the code for the actual fight
+  def fight(): 
+    random_number = random.randint(1, 10)
+    random_minimum = random.randint(2, 9)
+
+    #this is just the code to make the text appear as if it was being typed
+    for c in "This enemies health is ":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+    print
+
+    #this was originally a debug code but now it tells the user the health of the enemy
+    print(random_minimum)
+
+    sleep(2)
+      
+    #the same as last time this just makes it appear as if someone was typing
+    for c in Fore.WHITE + "rolling your damage....... you hit the enemy for ":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+    print
+      
+    #this was debug code but now it tells the user how much damage the player did
+    print(random_number)
+
+    #this is the code to decide if you did enough damage to eliminate the enemy
+    if random_number >= random_minimum:
+      print("You hit the enemy with enough force to eliminate him")
+    else:
+      print("you were to weak, go back to training")
+      sleep (1)
+      gameover()
+
+  
+
+
+  #the code if you failed the chance encounter
+  def Nencounter():
+    
+    for c in Fore.WHITE + "You did not encounter an enemy":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+    print
+
+
+  #the code if you succeded the chance enounter
+  def Yencounter():
+
+    #code to appear as if you were typing
+    for c in Fore.WHITE + "You encountered an [Enemy] ":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+    print
+
+    sleep(1)
+      
+    #if this def is chosen it started the fight def
+    fight()
+
+
+  #just the code to decide if you get an encounter or not
+  if EnemyEncounter < 2:
+    Yencounter()
+  else:
+    Nencounter()
+
 #the code for the jailcell part of the game
 def jail_cell():
 
@@ -47,85 +124,15 @@ def jail_cell():
 #the code for the gameover section of "jailcell"
 def gameover():
   print(Fore.YELLOW + "you die of depression in a jail where your soul will be trapped till the end of this universe.")
+  exit()
 
 #the code for section two, the corridot of left and right
 def corridor():
 
-  def Encounterr():
-    #the small line which chooses a random number between 1 and 10 to decide if you get an encounter
-    EnemyEncounter = random.randint(1, 1)
-
-      #the code for the actual fight
-    def fight(): 
-      random_number = random.randint(1, 10)
-      random_minimum = random.randint(2, 9)
-
-      #this is just the code to make the text appear as if it was being typed
-      for c in "This enemies health is ":
-          sys.stdout.write(c)
-          sys.stdout.flush()
-          time.sleep(0.07)
-      print
-
-      #this was originally a debug code but now it tells the user the health of the enemy
-      print(random_minimum)
-
-      sleep(2)
-        
-      #the same as last time this just makes it appear as if someone was typing
-      for c in Fore.WHITE + "rolling your damage....... you hit the enemy for ":
-          sys.stdout.write(c)
-          sys.stdout.flush()
-          time.sleep(0.07)
-      print
-        
-      #this was debug code but now it tells the user how much damage the player did
-      print(random_number)
-
-      #this is the code to decide if you did enough damage to eliminate the enemy
-      if random_number >= random_minimum:
-        print("You hit the enemy with enough force to eliminate him")
-      else:
-        print("you were to weak, go back to training")
-
-
-      #the code if you failed the chance encounter
-      def Nencounter():
-      
-        for c in Fore.WHITE + "You did not encounter an enemy":
-            sys.stdout.write(c)
-            sys.stdout.flush()
-            time.sleep(0.07)
-        print
-
-
-      #the code if you succeded the chance enounter
-      def Yencounter():
-
-        #code to appear as if you were typing
-        for c in Fore.WHITE + "You encountered an [Enemy] ":
-            sys.stdout.write(c)
-            sys.stdout.flush()
-            time.sleep(0.07)
-        print
-
-        sleep(1)
-        
-        #if this def is chosen it started the fight def
-        fight()
-
-
-      #just the code to decide if you get an encounter or not
-      if EnemyEncounter < 2:
-        Yencounter()
-      else:
-        Nencounter()
-
-  sleep(2)
   Encounterr()
 
   while True:
-    
+
     print("   ")
 
     #when you leave the cell you are given two options to walk, its up to you xD
@@ -173,6 +180,8 @@ def corridor():
 
 #this is the code for the cafeteria section
 def cafeteria():
+
+  Encounterr()
 
   while True:
 
@@ -226,6 +235,8 @@ def cafeteria():
 #this is the code for the gym section
 def gym():
 
+  Encounterr()
+
   while True:
 
     print("   ")
@@ -276,6 +287,8 @@ def gym():
 
 #this is the code for the gym section
 def library():
+
+  Encounterr()
 
   while True:
 
@@ -329,6 +342,8 @@ def library():
 
 #this is the code for the yard section
 def yard():
+
+  Encounterr()
 
   while True:
 
@@ -403,6 +418,8 @@ def yard():
 #this is the code for the yard section
 def hospital():
 
+  Encounterr()
+
   while True:
 
     print("   ")
@@ -462,6 +479,8 @@ def hospital():
 
 def lobby():
 
+  Encounterr()
+
   while True:
 
     print("   ")
@@ -476,7 +495,7 @@ def lobby():
 
     if choice1 == "w":
      
-      for c in Fore.YELLOW + "random room here":
+      for c in Fore.YELLOW + "you walk through a dorway. you see hospital beds and surgery equipment.":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
@@ -487,7 +506,7 @@ def lobby():
 
 
     elif choice1 == "s":
-      for c in Fore.YELLOW + "another room":
+      for c in Fore.YELLOW + "you walk east. you remember this room. it is the room where you met your loved ones frequently.":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
@@ -496,7 +515,7 @@ def lobby():
       break
 
     elif choice1 == "e":
-      for c in Fore.YELLOW + "another room":
+      for c in Fore.YELLOW + "you see cctv cameras and guns.":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
@@ -505,7 +524,7 @@ def lobby():
       break
 
     elif choice1 == "n":
-      for c in Fore.YELLOW + "another room":
+      for c in Fore.YELLOW + "you walk through a large door":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
@@ -521,6 +540,8 @@ def lobby():
       print
     
 def meeting_room():
+
+  Encounterr()
 
   while True:
 
@@ -539,7 +560,7 @@ def meeting_room():
     if choice1 == "n":
      
       #listen here buddy we aint finished alright?________________________________________
-      for c in Fore.YELLOW + "random room here":
+      for c in Fore.YELLOW + "you walk into a room decorated with carpets and paintings":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
@@ -552,7 +573,7 @@ def meeting_room():
     elif choice1 == "w":
 
       #you ancounter :O, another room that isnt finished, my oh my you could have forseen this :)
-      for c in Fore.YELLOW + "another room":
+      for c in Fore.YELLOW + "you walk west. you open a solid metal door. You walk outside into the yard":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
@@ -572,6 +593,8 @@ def meeting_room():
 
 def guards_office():
 
+  Encounterr()
+
   while True:
 
     print("   ")
@@ -589,7 +612,7 @@ def guards_office():
     if choice1 == "w":
      
       #listen here buddy we aint finished alright?________________________________________
-      for c in Fore.YELLOW + "random room here":
+      for c in Fore.YELLOW + "you walk into a room decorated with carpets and paintings":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
