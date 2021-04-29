@@ -368,6 +368,11 @@ def hallway():
 
     if choice == "l":
       print("You walk into a little sitting room and see the mysterious figure in the corner, it runs up to you and you die... game over!")
+      print(" .-.")
+      print("(o o) boo!")
+      print("| O \./")
+      print(" \   \.")
+      print("  `~~~'")
       break
 
     elif choice == "r":
