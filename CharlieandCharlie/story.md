@@ -29,3 +29,10 @@ Suddenly someone pushes you into it and you panick!
 
 You see a cave at the bottom of the lake so you decided to take a look at it instead of going back up to the top because the person who pushed you in could still be there.
 You make it to the cave and it's just a really long corridor which you decide to walk down.
+
+After what seems like hours of walking you finally see a door.
+You open it and it leads to the kitchen of the creepy house.
+You feel very creeped out so you decide to go out of the cave and back out of the lack to the garden.
+
+When you get out of the lake you see a little cottage instead of the house.
+You decide to go into it and you see a kitchen to your
