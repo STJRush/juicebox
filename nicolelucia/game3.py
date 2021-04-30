@@ -7,7 +7,7 @@ score = 0
 #this is a function for the intro to my game
 def intro():
     print(
-        "Welcome to our game, you will go around an abandoned house and try not to die. If you die you have to start again. The aim of the game is to get out of the abandoned house with at least 20 points. If you die, you have to start again. Have fun:)"
+        "Welcome to our game, you will go around an abandoned house and try not to die. If you die you have to start again. The aim of the game is to get out of the abandoned housea score of 25 points. If you die, you have to start again. Have fun:)"
     )
 
 
@@ -181,7 +181,7 @@ def first():
     #i started a loop
     while True:
         choice = input(
-            "You come across a big, seemingly abandoned house.Do you want to go in? Y/N? "
+            "You come across a big, seemingly abandoned house.Do you want to go in? y/n? "
         )
 
         if choice == "y":
@@ -190,12 +190,15 @@ def first():
             score = score + 5
             break
             #i put break to stop the loop
+            
+        if choice == "n":
+            print("You walk away from the house and keep going. You trip on a sprawled tree root and hit your head on a large rock.You suffer a fatal head injury.The ravens eat your lifeless body.You died.START AGAIN.")
+
+            score = score + 0
+            break
 
         else:
-            print(
-                "You walk away from the house and keep going. You trip on a sprawled tree root and hit your head on a large rock.You suffer a fatal head injury.The ravens eat your lifeless body.You died.START AGAIN."
-            )
-            score = score + 0
+           
             first()
 
 
