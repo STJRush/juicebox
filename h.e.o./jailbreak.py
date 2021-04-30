@@ -41,9 +41,17 @@ def Encounterr():
 
     #this is the code to decide if you did enough damage to eliminate the enemy
     if random_number >= random_minimum:
-      print("You hit the enemy with enough force to eliminate him")
+      for c in Fore.WHITE + "You hit the enemy with enough force to eliminate him":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
     else:
-      print("you were to weak, go back to training")
+      for c in Fore.WHITE + "you were to weak, go back to training":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
       sleep (1)
       gameover()
 
@@ -656,10 +664,20 @@ def exit_door():
     sys.stdout.flush()
     time.sleep(0.07)
   print
+  print(" ")
 
   if RealRating >= 10:
-    print("You hit the enemy with enough force to eliminate him. thanks for playing :)")
+    for c in Fore.WHITE + "You hit the enemy with enough force to eliminate him. thanks for playing :)":
+      sys.stdout.write(c)
+      sys.stdout.flush()
+      time.sleep(0.07)
+    print
   else:
-    print("you were to weak, go back to training")
+    for c in Fore.WHITE + "you were to weak, go back to training":
+      sys.stdout.write(c)
+      sys.stdout.flush()
+      time.sleep(0.07)
+    print
     gameover()
 jail_cell()
+
