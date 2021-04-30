@@ -121,3 +121,10 @@ def LockedDoor():
         print("THAT IS NOT AN OPTION!!")
 
       
+      
+      ERRORS
+      
+      A LOT OF THE ABOVE CODE DID NOT WORK DUE TO SYNTAX ERRORS AND INDENTATION ERRORS WHEN I TESTED IT.
+      
+    due to the high frequency of errors within our code i retyped a whole new code for the game that fully works as i have frequently tested the code 
+    and proof chekced it for errors. It now fully work and we have got a solid foundation for our game.
