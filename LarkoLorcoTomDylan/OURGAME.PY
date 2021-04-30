@@ -14,7 +14,7 @@ if choice =="Y":print("you walk forward")
 print("You go right through the second door, a wild centaur will guide you through the hall to the kitchen")
 
 if choice =="n":print("game over, you didnt wanna play, please run again")
-#this option still let's you continue and i can't change it??
+
 print("You are in the hall and you see a door to the left. Do you go in?")
 
 choice = input("y/n? ")
@@ -58,8 +58,7 @@ if choice =="y":
    print("a dead lynx is in the shower,the centaur says he has no arrows left to defend us, now it all makes sense, the centaur your defender is the last impostor, you kill the centaur with his own bow, his last words were, keep your friends close, but your enemys closer. you win. Congratulations.")
 
   
-   
-   #just a suggestion, for the options would you not put yes ans no instead of y and n
+  
 
 if choice =="n":
   print("You are dead. Survive next time. Please retry and win next time.")
