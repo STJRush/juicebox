@@ -629,12 +629,6 @@ def guards_office():
         time.sleep(0.07)
       print
 
-
-
-
-
-
-
 def exit_door():
 
   print("    ")
@@ -646,14 +640,26 @@ def exit_door():
       break
     except ValueError:
       print("not a number idiot")
+  for c in Fore.WHITE + "You encountered a boss":
+    sys.stdout.write(c)
+    sys.stdout.flush()
+    time.sleep(0.07)
+  print
+  for c in Fore.WHITE + "the health of this boss is":
+    sys.stdout.write(c)
+    sys.stdout.flush()
+    time.sleep(0.07)
+  print
+  print(10)
+  for c in Fore.WHITE + "rolling your damage....... you hit the enemy with your raiting!":
+    sys.stdout.write(c)
+    sys.stdout.flush()
+    time.sleep(0.07)
+  print
 
   if RealRating >= 10:
-      
-    print("lmao the rating was actually a boss fight and you won so uhhhh good job i guess")
-    gameover()
+    print("You hit the enemy with enough force to eliminate him. thanks for playing :)")
   else:
-    print(" you fool the rating sytem was actually a boss fight!!!!!!! and you died so get nea nead")
-
+    print("you were to weak, go back to training")
+    gameover()
 jail_cell()
-
-
