@@ -128,3 +128,206 @@ def LockedDoor():
       
     due to the high frequency of errors within our code i retyped a whole new code for the game that fully works as i have frequently tested the code 
     and proof chekced it for errors. It now fully work and we have got a solid foundation for our game.
+    
+    
+    
+    #This is a score keeper to keep track of the points the playe earns during the game
+#Players earn points for making the correct decisions
+
+global score 
+score = 0
+
+
+
+#function for the intro of the game
+def intro():
+  print("Hello and welcome to our haunted house game. It will now be your job to try and make it through our haunted house..... alive. Goodluck..... you'll need it. ")
+
+
+
+
+#GAME STARTS HERE
+
+#function for the begining of the game 
+def start():
+  pass
+  #start of loop
+  
+  while True:
+    
+    
+    choice =input("Type yes, to walk up to the front door of the haunted house and begin the game ")
+    if choice =="yes":
+      print("The game will now begin and you will enter the haunted house")
+
+      
+      break
+    
+
+    else:
+      print("You run far away from the house never to be seen again. GAME OVER!!!")
+    
+
+def frontDoor():
+  global score
+  #start of loop
+  while True :
+    choice = input("Do you want to push open the front door and enter the haunted house, yes or no? ")
+
+    if choice =="yes":
+      print("you are pushing open the front door now and you take a step inside of the haunted house")
+      global score
+      score = score + 5
+      break
+      #break out of loop
+
+    else:
+      print("Your nerves got the better of you and you walk ome crying. GAME OVER!!!")
+      score = score + 0
+      frontDoor()
+
+
+def hallway():
+ global score
+  #start of loop
+ while True:
+    print("As your standing in the hallway you step forward and see two doors, one on the left and one on the right, which one do you want to go and investigate, type left or right.")
+        
+
+    choice = input("do you want to go through the left door or the right door, type left or right")
+
+    if choice =="right":
+      print("you enter the kitchen, and a demonic monster sneaks up behind you and kills you. GAME OVER!!!")
+      score = score + 0
+      frontDoor()
+
+    if choice =="left" :
+      print("you are now in the sitting room ")
+      score = score + 5
+      break
+      #break out of loop
+
+
+    else :
+      print("pick a door, left or right")
+      hallway()
+
+def sittingRoom():
+  global score
+
+  #start of loop
+  while True:
+
+    choice = input("While you are standing in the sitting room you notice a hidden door in the corner, do you wish to investigate this hidden door, yes or no ")
+
+    if choice =="yes":
+      print("you approach the hidden door and begin to investigate it ")
+      global score
+      score = score + 5
+      break
+      #break out of loop
+
+    if choice =="no":
+      print("you end up standing in the same spot for too long and the ground collapses beneath your feet as you fall down the bottomless pit beneath the haunted house. GAME OVER!!!")
+      score = score + 0
+      frontDoor()
+    
+    else :
+      sittingRoom()
+
+def HiddenRoom():
+  #start of loop
+ while True:
+   print("you seem a key on the other side of the room do you run over and grab the key")
+
+
+   choice = input("yes or no ")
+
+   if choice =="yes":
+      print("you grab the key and sprint back across the room to begin unlocking the door")
+      global score
+      score = score + 5
+      break
+      #i put break to stop the loop
+
+   if choice =="no":
+    print("while standing besdie the hidden door, a demon smashes through the wall and eats you. GAME OVER!!!")
+    score = score + 0
+    start()
+
+   else :
+    HiddenRoom()
+
+def attic():
+#start of loop
+  while True:
+    print("the locked door reveals a hidden passage into the old abandoned attic ")
+
+
+    choice = input("do you want to go through the secret passage to the attic, type yes or no? ")
+
+    if choice =="yes":
+        print("you go up the secret passage way to the abandoned attic")
+        global score
+        score = score + 5
+        attic2()
+        break
+        #break out of loop
+    
+
+    if choice =="no" :
+        print("the hidden passage way slowly gets smaller until it completely engulfs you. GAME OVER!!!")
+        score = score + 0
+        start()
+
+    else :
+      attic()
+
+def attic2():
+#start of loop
+  while True:
+    print("you are now currently stading in the attic and see the demonic final boss, who owns and lives in the haunted house ")
+
+
+    choice = input("the final boss has not yet seen you do you wish to pick up the conviniently placed sword on the ground and strike him from behind before he notices you? type yes or no ")
+
+    if choice =="yes":
+        print("you strike and kill the final boss before he has any time to react. CONGRATULATION you have survived and completed our game")
+        global score
+        score = score + 5
+        endscore() 
+        break
+        #break out of loop
+    
+
+    if choice =="no" :
+        print("tough luck the final boss turned around and was in no mood to be your friend, so he strikes and kills you instantly. GAME OVER!!!")
+        score = score + 0
+        start()
+
+    else :
+      attic2()
+
+def endscore():
+
+  while True:
+     print("You finished with a score of", score)
+     break
+
+intro()
+
+start()
+
+frontDoor()
+
+hallway()
+
+sittingRoom()
+
+HiddenRoom()
+
+attic()
+
+attic2
+
+
