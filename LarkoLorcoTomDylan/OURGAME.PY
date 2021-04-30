@@ -10,19 +10,19 @@ print("You see your front door and there is a bloody arrow on the floor")
 choice = input("Forward y/n? ")
 
 if choice =="Y":print("you walk forward")
-
-print("You go right through the second door, a wild centaur will guide you through the hall to the kitchen")
-
-if choice =="n":print("game over, you didnt wanna play, please run again")
-
+print("You go right through the door anyways, a wild centaur will guide you through the hall to the kitchen")
+if choice =="n":
+    while True:
+     print:("game over, you didnt wanna play, please run again")
 print("You are in the hall and you see a door to the left. Do you go in?")
 
 choice = input("y/n? ")
 
 
 if choice =="y":
-   print("you walk forward into the bathroom where an agressive dwarf attacks you and you die, game over, please run again")
-   gameover()
+   while True:
+     print("game over you died")
+      
  
 else:print("you have not failed yet")
 
@@ -55,12 +55,8 @@ choice = input("y/n ")
 
 
 if choice =="y":
-   print("a dead lynx is in the shower,the centaur says he has no arrows left to defend us, now it all makes sense, the centaur your defender is the last impostor, you kill the centaur with his own bow, his last words were, keep your friends close, but your enemys closer. you win. Congratulations.")
-
-  
-  
+   print("a dead lynx is in the shower,the centaur says he has no arrows left to defend us, now it all makes sense, the centaur your defender is the last impostor, you kill the centaur with his own bow, his last words were, keep your friends close, but your enemys closer. you win. Congratulations")
 
 if choice =="n":
   print("You are dead. Survive next time. Please retry and win next time.")
   gameover()
-
