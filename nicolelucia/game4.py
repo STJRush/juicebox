@@ -392,6 +392,7 @@ def kitchen():
 
 
 def finalscore():
+    print("\033[2;33;40m YOU FINISHED!!!!!!!1 \n")
     print("Your final score is...", score)
 
 
