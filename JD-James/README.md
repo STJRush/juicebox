@@ -330,4 +330,6 @@ attic()
 
 attic2
 
-
+This is the brand new working code for our game that i have spent the past 3 classes and some time at home on my laptop retyping and copying partial 
+blocks from my old Repls from when we completed this coding project during lockdown.
+We can now begin to try and add more advanced features to our game such as soundtracks and images.
