@@ -1,4 +1,5 @@
-print ("You are being chased by a mysterious figure and you come across a creepy looking house")
+
+print("\033[1;34;40m You are being chased by a mysterious figure and you come across a creepy looking house  \n")
 
 print("      `'::::.")
 print("        _____A_")
@@ -217,7 +218,7 @@ def zombies():
 
 
 def garden():
-  print("In the garden you see a lake and the a driveway leading a different way out")
+  print("\033[1;32;40m In the garden you see a lake and the a driveway leading a different way out  \n")
 
   choice = input ("Which do you want to go to - l/d?")
 
@@ -295,7 +296,7 @@ def lake():
     
     
 def cave():
-  print("When you open the door to the cave, there is no water inside but just torches on the wall leading down a long corridor")
+  print("\033[1;31;40m When you open the door to the cave, there is no water inside but just torches on the wall leading down a long corridor  \n")
   
   choice = input ("Do you want to walk down the long corridor or leave to go back to the surface of the lake - w/l?")
   
@@ -339,7 +340,8 @@ def corridor():
     
    
 def top():
-  print("You make it out of the lake just in time and see that the big house is gone but instead there is a little cottage where the creepy house was?")
+  print("\033[1;35;40m You make it out of the lake just in time and see that the big house is gone but instead there is a little cottage where the creepy house was?r  \n")
+  
   
   choice = input ("Do you want to go into the cottage or leave through the driveway - c/d?")
                   
@@ -368,16 +370,11 @@ def hallway():
 
     if choice == "l":
       print("You walk into a little sitting room and see the mysterious figure in the corner, it runs up to you and you die... game over!")
-      print(" .-.")
-      print("(o o) boo!")
-      print("| O \./")
-      print(" \   \.")
-      print("  `~~~'")
       break
 
     elif choice == "r":
       print("You enter a kitchen but see the mysterious figure and it runs up to you")
-       print(".-.")
+      print(".-.")
       print("(o o) boo!")
       print("| O \./")
       print(" \   \.")
