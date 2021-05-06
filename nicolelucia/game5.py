@@ -175,7 +175,20 @@ def house():
     print(" '.'.'.'' .'' '.'. @/- - --- -- - -\@ '.'.'.'.'.'.'.''  ")
     print(" '. '' '.'.'.'.'@/ - -- -- -- -- -\@'.'..''.'.'.'.' ")
     print("'.'.'.''.'.''.'@/ -- --- --- -- - -\@.'.''.'.''.'.''.")
+ 
+def groundkey():
+  from time import sleep
+  import pygame
+  pygame.init()
 
+  gameDisplay = pygame.display.set_mode((500,350))
+
+  keyImg = pygame.image.load('old ground key.jfif')
+
+  gameDisplay.blit(keyImg, (0,0))
+  pygame.display.update()
+  sleep(2)
+    
 def key():
   global score
   while True:
@@ -434,6 +447,8 @@ start()
 trees()
 
 house()
+
+groundkey()
 
 key()
 
