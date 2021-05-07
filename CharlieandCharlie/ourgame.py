@@ -1,20 +1,44 @@
+#Charlie Savage did this code
+
+#This imports Pygame
 from time import sleep
 import pygame
 pygame.init()
 
+#This chooses the size of the picture
 gameDisplay = pygame.display.set_mode((500,350))
 
+#This imports the picture
 houseImg = pygame.image.load('Hounted-House.jpg')
 
+#This prints the picture
 gameDisplay.blit(houseImg, (0,0))
 pygame.display.update()
 sleep(2)
 
+#This changes the text to the colour green
+print("\033[1;32;40m You see a mysterious house and decide to walk up to it and see a key on the ground  \n")
+
+#This is a function for the room
 def outside():
   
-  choice = input ("Would you like to go into it to? - y/n?")
-
+  #This is input is for a choice
+  choice = input ("Do you want to pick up the key? - y/n?")
+  
+  #This adds the key to your inventory if you choose y for yes
   if choice == "y":
+    keyList = []
+
+  print("You pick up the key")
+
+  #This appends the key to the list/inventory
+  keyList.append("Key")
+
+  print(keyList)
+
+  if "Key" in keyList:
+    print("You open the door with the key")
+
     print("You enter the house and the house looks like no one has lived there for years")
     lobby() 
 
