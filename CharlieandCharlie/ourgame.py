@@ -1,12 +1,14 @@
+from time import sleep
+import pygame
+pygame.init()
 
-print("\033[1;34;40m You are being chased by a mysterious figure and you come across a creepy looking house  \n")
+gameDisplay = pygame.display.set_mode((500,350))
 
-print("      `'::::.")
-print("        _____A_")
-print("       /      /\.")
-print("    __/__/\__/  \___")
-print("---/__|" '' "| /___/\----")
-print("   |''|"'||'"| |' '||")
+houseImg = pygame.image.load('Hounted-House.jpg')
+
+gameDisplay.blit(houseImg, (0,0))
+pygame.display.update()
+sleep(2)
 
 def outside():
   
@@ -218,6 +220,19 @@ def zombies():
 
 
 def garden():
+
+  from time import sleep
+  import pygame
+  pygame.init()
+
+  gameDisplay = pygame.display.set_mode((500,350))
+
+  lakeImg = pygame.image.load('Lake.jpg')
+
+  gameDisplay.blit(lakeImg, (0,0))
+  pygame.display.update()
+  sleep(2)
+
   print("\033[1;32;40m In the garden you see a lake and the a driveway leading a different way out  \n")
 
   choice = input ("Which do you want to go to - l/d?")
@@ -270,25 +285,17 @@ def lake():
     
   elif choice == "t":
     print("You make it out of the lake just in time and see that the big house is gone but instead there is a little cottage where the creepy house was?")
-    print("                          (   )")
-    print("                          (    )")
-    print("                           (    )")
-    print("                          (    )")
-    print("                            )  )")
-    print("                           (  (                  /\.")
-    print("                            (_)                 /  \  /\.")
-    print("                    ________[_]________      /\/    \/  \.")
-    print("           /\      /\        ______    \    /   /\/\  /\/\.")
-    print("          /  \    //_\       \    /\    \  /\/\/    \/    \.")
-    print("  /\    / /\/\  //___\       \__/  \    \/.")
-    print("  /  \  /\/    \//_____\       \ |[]|     \.")
-    print(" /\/\/\/       //_______\       \|__|      \v")
-    print("/      \      /XXXXXXXXXX\                  \v")
-    print("        \    /_I_II  I__I_\__________________\v")
-    print("               I_I|  I__I_____[]_|_[]_____I")
-    print("              I_II  I__I_____[]_|_[]_____I")
-    print("               I II__I  I     XXXXXXX     I")
-    print("            ~~~~~"   "~~~~~~~~~~~~~~~~~~~~~~~~")
+    from time import sleep
+    import pygame
+    pygame.init()
+
+    gameDisplay = pygame.display.set_mode((500,350))
+
+    cottageImg = pygame.image.load('Creepy Cottage.jpg')
+
+    gameDisplay.blit(cottageImg, (0,0))
+    pygame.display.update()
+    sleep(2)
     top()
     
   else:
