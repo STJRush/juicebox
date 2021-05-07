@@ -2,6 +2,25 @@ from time import sleep
 import pygame
 pygame.init()
 
+from time import sleep
+
+mixer.init()
+
+mixer.music.load("nextgentheme.mp3")
+
+mixer.music.play()
+sleep(2)
+
+
+engagesound= mixer.sound("picard.wav")
+mixer.sound.play(engagesound)
+
+sleep(2)
+
+mixer.music.stop()
+
+
+
 gameDisplay = pygame.display.set_mode((500,350))
 
 houseImg = pygame.image.load('Hounted-House.jpg')
