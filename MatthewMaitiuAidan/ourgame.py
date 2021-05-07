@@ -2,6 +2,10 @@ from time import sleep
 import pygame
 pygame.init()
 score = 0
+from pygame import mixer
+
+from time import sleep
+
 def goblinfight1n1():
   print("The loot goblin swings its mace at you. It collides with you breaking all of your bones turning you to jellow, the last thing you hear is it cackeling whilst saying 'I'm the victim here!' ")
   sleep(2)
@@ -93,6 +97,13 @@ def tutorialroom():
 
 
 def outside():
+  mixer.init()
+
+mixer.music.load("251_Candledeep.mp3")
+
+mixer.music.play()
+sleep(100)
+mixer.music.stop()
   while True:  
     print("THE DUNGEON")
 
@@ -118,7 +129,14 @@ def outside():
 
 
 
-while True:  
+while True: 
+  mixer.init()
+
+mixer.music.load("251_Candledeep.mp3")
+
+mixer.music.play()
+sleep(100)
+mixer.music.stop()
     print("THE DUNGEON")
 
     print("Welcome to THE DUNGEON!!!!! I am your guide  Paul the ultimate destroyer of world ruler of the forgotten kingdom and I will help you throughout your adventure in THE DUNGEON!!! ")
