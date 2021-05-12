@@ -6,6 +6,14 @@ from pygame import mixer
 
 from time import sleep
 
+def hallwayv22():
+  print("you enter the door and before you lies a dark hallway. you walk down the hall only to find another door. You enter...")
+  room2()
+  
+def hallway222():
+  print("you enter the door and before you lies a dark hallway. you walk down the hall only to find another door. You enter..,.")
+  room3()
+
 def goblinfight1n1():
   print("The loot goblin swings its mace at you. It collides with you breaking all of your bones turning you to jellow, the last thing you hear is it cackeling whilst saying 'I'm the victim here!' ")
   sleep(2)
