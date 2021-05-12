@@ -255,49 +255,7 @@ mixer.music.stop()
     
     
 
-  elif choice == "S":
-     print("Of course S the only valid option....You a shoot laser beam from your chest and evaporate Kevin. You gain a ancient sword shard! You stroll to the next room. ")
-     bag.append("ancient sword upper shard")
-     hallway4()
-
-  elif choice == "V":
-    print("KEVIN DOES NOT APPROVE OF THIS MOVE. HE ZAPS YOU WITH HIS KEVIN LARVA MAGIC...YOU DIE  ")
-    gameoverdisplay = pygame.display.set_mode((800,500))
-
-    gameover = pygame.image.load('death3.jpg')
-
-    gameoverdisplay.blit(gameover, (0,0))
-    pygame.display.update()
-    sleep(5)
-
-    pygame.quit()
-    quit()
-    outside()
-    
-
-  elif choice == "A":
-   print("KEVIN DOES NOT APPROVE OF THIS MOVE. HE ZAPS YOU WITH HIS KEVIN LARVA MAGIC...YOU DIE  ")
-   
-   outside()
- 
-
-  elif choice == "POOP": 
-     print("You poop on Kevin. Kevin starts buring to death. His final words are , 'NOOOOOOOO MY K/D '. You proceed to the next room ")
-     hallway4()
-
-  else:
-       print("NOT AN OPTION FOOL....KEVIN DUNKS ON YOU WITH HIS EPIC BASKETBALL SKILLS...")
-       gameoverdisplay = pygame.display.set_mode((800,500))
-
-       gameover = pygame.image.load('death3.jpg')
-
-       gameoverdisplay.blit(gameover, (0,0))
-       pygame.display.update()
-       sleep(5)
-
-       pygame.quit()
-       quit()
-       outside()
+  
       
        def trollfight1():
         choice = input("You see a troll jump out of the barrel, do you wish to fight it or sneak by it? Y/N/S...")
