@@ -223,35 +223,7 @@ mixer.music.stop()
     
     
 
-  elif choice == "HH":
-   print("KEVIN DOES NOT APPROVE OF THIS MOVE. HE ZAPS YOU WITH HIS KEVIN LARVA MAGIC...YOU DIE  ")
-   gameoverdisplay = pygame.display.set_mode((800,500))
-
-   gameover = pygame.image.load('death3.jpg')
-
-   gameoverdisplay.blit(gameover, (0,0))
-   pygame.display.update()
-   sleep(5)
-
-   pygame.quit()
-   quit()
-   outside()
-   outside()
-    
-
-  elif choice == "ER":
-    print("KEVIN DOES NOT APPROVE OF THIS MOVE. HE ZAPS YOU WITH HIS KEVIN LARVA MAGIC...YOU DIE  ")
-    gameoverdisplay = pygame.display.set_mode((800,500))
-
-    gameover = pygame.image.load('death3.jpg')
-
-    gameoverdisplay.blit(gameover, (0,0))
-    pygame.display.update()
-    sleep(5)
-
-    pygame.quit()
-    quit()
-    outside()
+ 
     
     
 
