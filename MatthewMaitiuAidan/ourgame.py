@@ -173,23 +173,7 @@ mixer.music.stop()
      quit()
      outside()
     
-     def kevinfight1():
-      choice = input("Kevin gazes into your eyes. Suddenly you think of many ways to defeat kevin.... Y/N/D/HH/ER/S/V/A/POOP...  ")
-  
-  
-      if choice == "Y":
-       print("KEVIN DOES NOT APPROVE OF THIS MOVE. HE ZAPS YOU WITH HIS KEVIN LARVA MAGIC...YOU DIE  ")
-       gameoverdisplay = pygame.display.set_mode((800,500))
-
-       gameover = pygame.image.load('death3.jpg')
-
-      gameoverdisplay.blit(gameover, (0,0))
-      pygame.display.update()
-      sleep(5)
-
-      pygame.quit()
-      quit()
-      outside()
+     
       
   elif choice == "N":
    print("KEVIN DOES NOT APPROVE OF THIS MOVE. HE ZAPS YOU WITH HIS KEVIN LARVA MAGIC...YOU DIE  ")
