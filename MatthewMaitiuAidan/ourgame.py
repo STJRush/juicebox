@@ -135,7 +135,43 @@ mixer.music.stop()
       print (" NOT AN OPTION")
     outside()
 
-   
+   def room3():
+ choice=input("You sprint into the next room for no reason except for dramatic effect. You see a man in wizard robe and hat stand in front of you. Do you speak to him? Y/N...")
+ if choice =="Y":
+    choice = input ("You choose to speak to him but before you manage to say anything he interrupts you. The wizard says 'I AM THE GREAT WIZARD KEVIN LARVA AND YOU WILL BOW BEFORE ME '. Do you wish to fight Kevin? F/R...  ")
+ 
+
+ if choice =="F":
+    print("You chose to fight Kevin Larva")
+    kevinfight1()
+
+ if choice =="R": 
+    print("You try to run away from the mighty Kevin Larva, but as you turn away Kevin zaps you with his Kevin Larva magic. ")
+    gameoverdisplay = pygame.display.set_mode((800,500))
+
+    gameover = pygame.image.load('death3.jpg')
+
+    gameoverdisplay.blit(gameover, (0,0))
+    pygame.display.update()
+    sleep(5)
+
+    pygame.quit()
+    quit()
+    outside() 
+    
+    else:
+     print("You do nothing....Kevin gets bored and Kevin kills you with his legendary scar Fortnite. ")
+     gameoverdisplay = pygame.display.set_mode((800,500))
+
+     gameover = pygame.image.load('death3.jpg')
+
+     gameoverdisplay.blit(gameover, (0,0))
+     pygame.display.update()
+     sleep(5)
+
+     pygame.quit()
+     quit()
+     outside()
     
      def kevinfight1():
       choice = input("Kevin gazes into your eyes. Suddenly you think of many ways to defeat kevin.... Y/N/D/HH/ER/S/V/A/POOP...  ")
