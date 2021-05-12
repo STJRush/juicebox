@@ -104,6 +104,7 @@ mixer.music.load("251_Candledeep.mp3")
 mixer.music.play()
 sleep(100)
 mixer.music.stop()
+
   while True:  
     print("THE DUNGEON")
 
@@ -126,17 +127,229 @@ mixer.music.stop()
       print (" NOT AN OPTION")
     outside()
 
+   def room3():
+ choice=input("You sprint into the next room for no reason except for dramatic effect. You see a man in wizard robe and hat stand in front of you. Do you speak to him? Y/N...")
+ if choice =="Y":
+    choice = input ("You choose to speak to him but before you manage to say anything he interrupts you. The wizard says 'I AM THE GREAT WIZARD KEVIN LARVA AND YOU WILL BOW BEFORE ME '. Do you wish to fight Kevin? F/R...  ")
+ 
 
+ if choice =="F":
+    print("You chose to fight Kevin Larva")
+    kevinfight1()
 
+ if choice =="R": 
+    print("You try to run away from the mighty Kevin Larva, but as you turn away Kevin zaps you with his Kevin Larva magic. ")
+    gameoverdisplay = pygame.display.set_mode((800,500))
+
+    gameover = pygame.image.load('death3.jpg')
+
+    gameoverdisplay.blit(gameover, (0,0))
+    pygame.display.update()
+    sleep(5)
+
+    pygame.quit()
+    quit()
+    outside() 
+    
+    else:
+     print("You do nothing....Kevin gets bored and Kevin kills you with his legendary scar Fortnite. ")
+     gameoverdisplay = pygame.display.set_mode((800,500))
+
+     gameover = pygame.image.load('death3.jpg')
+
+     gameoverdisplay.blit(gameover, (0,0))
+     pygame.display.update()
+     sleep(5)
+
+     pygame.quit()
+     quit()
+     outside()
+    
+     def kevinfight1():
+      choice = input("Kevin gazes into your eyes. Suddenly you think of many ways to defeat kevin.... Y/N/D/HH/ER/S/V/A/POOP...  ")
+  
+  
+      if choice == "Y":
+       print("KEVIN DOES NOT APPROVE OF THIS MOVE. HE ZAPS YOU WITH HIS KEVIN LARVA MAGIC...YOU DIE  ")
+       gameoverdisplay = pygame.display.set_mode((800,500))
+
+       gameover = pygame.image.load('death3.jpg')
+
+      gameoverdisplay.blit(gameover, (0,0))
+      pygame.display.update()
+      sleep(5)
+
+      pygame.quit()
+      quit()
+      outside()
+      
+  elif choice == "N":
+   print("KEVIN DOES NOT APPROVE OF THIS MOVE. HE ZAPS YOU WITH HIS KEVIN LARVA MAGIC...YOU DIE  ")
+   gameoverdisplay = pygame.display.set_mode((800,500))
+
+   gameover = pygame.image.load('death3.jpg')
+
+   gameoverdisplay.blit(gameover, (0,0))
+   pygame.display.update()
+   sleep(5)
+
+   pygame.quit()
+   quit()
+   outside()
+   outside()
+  
+  elif choice == "D":
+   print("KEVIN DOES NOT APPROVE OF THIS MOVE. HE ZAPS YOU WITH HIS KEVIN LARVA MAGIC...YOU DIE  ")
+   gameoverdisplay = pygame.display.set_mode((800,500))
+
+   gameover = pygame.image.load('death3.jpg')
+
+   gameoverdisplay.blit(gameover, (0,0))
+   pygame.display.update()
+   sleep(5)
+
+   pygame.quit()
+   quit()
+   outside()
+   outside()
+    
+
+  elif choice == "HH":
+   print("KEVIN DOES NOT APPROVE OF THIS MOVE. HE ZAPS YOU WITH HIS KEVIN LARVA MAGIC...YOU DIE  ")
+   gameoverdisplay = pygame.display.set_mode((800,500))
+
+   gameover = pygame.image.load('death3.jpg')
+
+   gameoverdisplay.blit(gameover, (0,0))
+   pygame.display.update()
+   sleep(5)
+
+   pygame.quit()
+   quit()
+   outside()
+   outside()
+    
+
+  elif choice == "ER":
+    print("KEVIN DOES NOT APPROVE OF THIS MOVE. HE ZAPS YOU WITH HIS KEVIN LARVA MAGIC...YOU DIE  ")
+    gameoverdisplay = pygame.display.set_mode((800,500))
+
+    gameover = pygame.image.load('death3.jpg')
+
+    gameoverdisplay.blit(gameover, (0,0))
+    pygame.display.update()
+    sleep(5)
+
+    pygame.quit()
+    quit()
+    outside()
+    
+    
+
+  elif choice == "S":
+     print("Of course S the only valid option....You a shoot laser beam from your chest and evaporate Kevin. You gain a ancient sword shard! You stroll to the next room. ")
+     bag.append("ancient sword upper shard")
+     hallway4()
+
+  elif choice == "V":
+    print("KEVIN DOES NOT APPROVE OF THIS MOVE. HE ZAPS YOU WITH HIS KEVIN LARVA MAGIC...YOU DIE  ")
+    gameoverdisplay = pygame.display.set_mode((800,500))
+
+    gameover = pygame.image.load('death3.jpg')
+
+    gameoverdisplay.blit(gameover, (0,0))
+    pygame.display.update()
+    sleep(5)
+
+    pygame.quit()
+    quit()
+    outside()
+    
+
+  elif choice == "A":
+   print("KEVIN DOES NOT APPROVE OF THIS MOVE. HE ZAPS YOU WITH HIS KEVIN LARVA MAGIC...YOU DIE  ")
+   
+   outside()
+ 
+
+  elif choice == "POOP": 
+     print("You poop on Kevin. Kevin starts buring to death. His final words are , 'NOOOOOOOO MY K/D '. You proceed to the next room ")
+     hallway4()
+
+  else:
+       print("NOT AN OPTION FOOL....KEVIN DUNKS ON YOU WITH HIS EPIC BASKETBALL SKILLS...")
+       gameoverdisplay = pygame.display.set_mode((800,500))
+
+       gameover = pygame.image.load('death3.jpg')
+
+       gameoverdisplay.blit(gameover, (0,0))
+       pygame.display.update()
+       sleep(5)
+
+       pygame.quit()
+       quit()
+       outside()
+      
+       def trollfight1():
+        choice = input("You see a troll jump out of the barrel, do you wish to fight it or sneak by it? Y/N/S...")
+        if choice == "Y":
+        trollfight1y()
+        if choice == "N":
+       trollfight1n()
+       if choice =="S":
+       sneaktroll()
+
+def trollfight1y():
+ print("The troll swings its axe at you.")
+ print("You  manage to barely dodge it ")
+ print("You hit the troll with your wooden sword and kill it.")
+ print("you gain a ancient sword hilt!")
+ bag.append("ancient sword hilt")
+ hallway11()
+
+def trollfight1n():
+  print("The troll swings its axe at you. The axe chops you in half and you guessed it you die.   ")
+  sleep(2)
+  choice5 = input("You have died, restart Y/Y...")
+  if choice5 == "Y":
+   
+    outside()
+  else:
+    print("nuh uh mister!")
+    sleep(2)
+    outside() 
+    
+def sneaktroll():
+    print("You sneak past the troll")
+    hallway11()
+    
+def hallwayv22():
+  print("you enter the door and before you lies a dark hallway. you walk down the hall only to find another door. You enter...")
+  room2()
+  
+def hallway222():
+  print("you enter the door and before you lies a dark hallway. you walk down the hall only to find another door. You enter..,.")
+  room3()
+  
+  def room1():
+   choice=input("You walk into the next room. You see another door on the other side of the room that is locked and a bunch of barrels stacked on top of each other. The top barrel starts to rattle. Do you go over to it? Y/N...")
+   if choice =="Y":
+    print ("You walk over to the barrel and open it....SUDDENLY A TROLL APPEARS ")
+    trollfight1()
+   if choice =="N": ("You do nothing....")
+  
+   else: 
+   print("You trip over your own leg and break your face .... you die .... we do a little trolling :)")
+   outside()
 
 while True: 
   mixer.init()
 
-mixer.music.load("251_Candledeep.mp3")
+  mixer.music.load("251_Candledeep.mp3")
 
-mixer.music.play()
-sleep(100)
-mixer.music.stop()
+  mixer.music.play()
+  sleep(100)
+  mixer.music.stop()
     print("THE DUNGEON")
 
     print("Welcome to THE DUNGEON!!!!! I am your guide  Paul the ultimate destroyer of world ruler of the forgotten kingdom and I will help you throughout your adventure in THE DUNGEON!!! ")
