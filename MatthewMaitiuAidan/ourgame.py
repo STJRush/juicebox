@@ -323,13 +323,7 @@ def sneaktroll():
     print("You sneak past the troll")
     hallway11()
     
-def hallwayv22():
-  print("you enter the door and before you lies a dark hallway. you walk down the hall only to find another door. You enter...")
-  room2()
-  
-def hallway222():
-  print("you enter the door and before you lies a dark hallway. you walk down the hall only to find another door. You enter..,.")
-  room3()
+
   
   def room1():
    choice=input("You walk into the next room. You see another door on the other side of the room that is locked and a bunch of barrels stacked on top of each other. The top barrel starts to rattle. Do you go over to it? Y/N...")
