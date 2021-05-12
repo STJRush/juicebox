@@ -219,7 +219,8 @@ mixer.music.stop()
    pygame.quit()
    quit()
    outside()
-   outside()
+   
+    
     
 
   elif choice == "HH":
