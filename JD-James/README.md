@@ -4,7 +4,7 @@ Haunted House Game: Summer Assessment 2021
 this is the start of our haunted house game.
 the players starts in the firtst room which is the front lawn outside the haunted house
 
-You live in a nearby quiet town, you have heard stories your whole life about the Thornwaite Manor, an abandoned house owned by the prestigious Thornwaite Family who mysteriously disappeared decades ago and were never seen again. The main theory of the manor's tendency for people who enter is never coming back being that the thornwaite family still haunt the manor to this day.
+You live in a nearby quiet town, you have heard stories your whole life about the Thornwaite Manor, an abandoned house owned by the prestigious Thornwaite Family who mysteriously disappeared decades ago and were never seen again. The main theory of the manor's tendency for people who enter is never coming back being that the Thornwaite family still haunt the manor to this day.
 The House was abandoned and has fell into disrepair.
 The house has been locked up for decades and no one has neen allowed to enter for years.
 You heard stories about the manor, but nothing has ever been backed up by hard evidence.
@@ -12,8 +12,8 @@ You decide to go see the manor for yourself and settle your suspicion once and f
 You set off at dawn hoping you can make it there before night, but by the time you arrive it is already pitch black.
 you walk through the forest until you find a disheveled pathway.
 You follow down the pathway until you see a huge gate, that is grown over with vines.
-You slowly open the gate and you are met with the sight of a huge run down structure, you turn on your flashlight and slowly walk to the door of the manor
-This is wear your story begins adevnturer... Good Luck
+You slowly open the gate and you are met with the sight of a huge run down structure, you turn on your flashlight, and slowly walk to the door of the manor
+This is where your story begins adevnturer... Good Luck
 
 
 
