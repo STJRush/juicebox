@@ -21,6 +21,7 @@ def start():
 
     while True:
 
+        
         choice = input("type start to load ")
         if choice == "start":
             print("   _____     _______   ")
