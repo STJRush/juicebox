@@ -433,11 +433,23 @@ def kitchen():
 
         else:
             kitchen()
+def win():
+  from time import sleep
+  import pygame
+  pygame.init()
+  gameDisplay = pygame.display.set_mode((500,350))
 
+  winImg = pygame.image.load('youwin.jpg')
+
+  gameDisplay.blit(winImg, (0,0))
+  pygame.display.update()
+  sleep(2)
 
 def finalscore():
     print("\033[2;33;40m YOU FINISHED!!!!!!!1 \n")
     print("Your final score is...", score)
+    
+    
 
 
 intro()
