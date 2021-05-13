@@ -321,7 +321,7 @@ def livingroom():
         tv()
 
         choice = input(
-            "Do you go to the backgarden or switch on the TV? Backgarden/TV ")
+            "Do you go to the backgarden or switch on the TV? backgarden/tv ")
 
         if choice == "backgarden":
             print(
