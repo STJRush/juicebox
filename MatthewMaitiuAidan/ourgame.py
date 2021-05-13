@@ -356,6 +356,15 @@ def sneaktroll():
    outside()
 
 while True: 
+  gameDisplay = pygame.display.set_mode(   (800,600))
+screensaver = pygame.image.load('slash screen.jpg')
+gameDisplay.blit(screensaver, (0,0))
+pygame.display.update()
+sleep(1)
+pygame.quit
+quit()
+  
+  
   mixer.init()
 
   mixer.music.load("251_Candledeep.mp3")
