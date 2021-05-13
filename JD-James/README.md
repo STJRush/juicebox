@@ -24,7 +24,7 @@ def outside():
 
   while True:
 
-    print("You are standing on the lawn of the haunted house, and slowly proceed to make your way up to the front door.")
+    print("You are stood at the lawn of the haunted house, you proceed to the front door.")
 
     choice1 = input("You're now at the front door, what do your do? f(go forward and enter the house), b(run far away and never go near the haunted house again)")
 
@@ -34,12 +34,12 @@ def outside():
       #lobby()
 
     elif choice1 == "b":
-      print("You run far away and never ever comeback!!")
+      print("You can't handle it, you dash out of the house and run home, never to return, I guess you'll never know what truly happened at the Thornwaite Manor.")
       break
       #gameover()
 
     else:
-      print("THAT IS NOT AN OPTION!")
+      print("I Cant Do That!")
 
 
 
@@ -51,7 +51,7 @@ def lobby():
 
   while True:
 
-    print("YOU ARE NOW IN THE HALLWAY")
+    print("You enter the hallway")
     print("THE FRONT DOOR SUDDENLY SLAMS SHUT AND LOCKS BEHIND YOU!!!")
 
     choice1 = input("You see a door (l)eft and (r)ight, what do your do")
@@ -67,7 +67,7 @@ def lobby():
       #kitchen()
 
     else:
-      print("THAT IS NOT AN OPTION!")
+      print("I Can't Do That!")
       
 Today I added a score keeper to our haunted house game.
 
@@ -101,12 +101,12 @@ def sittingRoom():
       score = score + 5
       
       elif choice3 == "n":
-      print("A demonic monster runs out of the kitchen and chases you out of the haunted house. GAME OVER!")
+      print("A ghostly figure appears, could it be one of the Thornwaite Family, before you can find out, the figure kills you. GAME OVER!")
       break
       
 
     else:
-      print("THAT IS NOT AN OPTION!!")
+      print("I Can't Do That!!")
 
       # LockedDoor()
 def LockedDoor():
@@ -131,7 +131,7 @@ def LockedDoor():
       
 
         else:
-        print("THAT IS NOT AN OPTION!!")
+        print("I Can't Do That!!")
 
       
       
