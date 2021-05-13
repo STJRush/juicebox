@@ -17,6 +17,16 @@ def hallway222():
 def goblinfight1n1():
   print("The loot goblin swings its mace at you. It collides with you breaking all of your bones turning you to jellow, the last thing you hear is it cackeling whilst saying 'I'm the victim here!' ")
   sleep(2)
+  gameoverdisplay = pygame.display.set_mode((800,500))
+
+  gameover = pygame.image.load('death3.jpg')
+
+  gameoverdisplay.blit(gameover, (0,0))
+  pygame.display.update()
+  sleep(5)
+
+  pygame.quit()
+  quit()
   choice5 = input("you have died, restart Y/Y")
   if choice5 == "Y":
     outside()
