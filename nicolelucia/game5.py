@@ -368,7 +368,7 @@ def shedtwo():
         shed()
 
         choice = input(
-            "You can either go on the grass or into the shed.Which do you choose? Grass/Shed"
+            "You can either go on the grass or into the shed.Which do you choose? grass/shed"
         )
 
         if choice == "shed":
