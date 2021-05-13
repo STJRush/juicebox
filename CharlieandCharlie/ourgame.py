@@ -1,37 +1,47 @@
-#Charlie Savage did this code
+def start():
 
-#This imports Pygame
+  from time import sleep
+  import pygame
+  pygame.init()
+
+  gameDisplay = pygame.display.set_mode((500,350))
+
+  startImg = pygame.image.load('game-start.jpg')
+
+  gameDisplay.blit(startImg, (0,0))
+  pygame.display.update()
+  sleep(2)
+
+  choice = input ("Type start to begin playing the game ")
+
+  if choice == "start":
+    sleep(1)
+    print("Loading game...")
+    sleep(2)
+    outside()
+
+
 from time import sleep
 import pygame
 pygame.init()
 
-#This chooses the size of the picture
 gameDisplay = pygame.display.set_mode((500,350))
 
-#This imports the picture
 houseImg = pygame.image.load('Hounted-House.jpg')
 
-#This prints the picture
 gameDisplay.blit(houseImg, (0,0))
 pygame.display.update()
 sleep(2)
 
-#This changes the text to the colour green
-print("\033[1;32;40m You see a mysterious house and decide to walk up to it and see a key on the ground  \n")
-
-#This is a function for the room
 def outside():
   
-  #This is input is for a choice
-  choice = input ("Do you want to pick up the key? - y/n?")
-  
-  #This adds the key to your inventory if you choose y for yes
+  choice = input ("\033[1;32;40m You see a mysterious house and decide to walk up to it and see a key on the ground. Do you want to pick up the key? - y/n? \n")
+
   if choice == "y":
     keyList = []
 
   print("You pick up the key")
 
-  #This appends the key to the list/inventory
   keyList.append("Key")
 
   print(keyList)
@@ -43,12 +53,13 @@ def outside():
     lobby() 
 
   else:
-    print("The mysterious figure cathces up and you died... Game over!")
+    print("The mysterious figure cathces up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
     print(" \   \.")
     print("  `~~~'")
+    over()
 
 
 def lobby():
@@ -64,12 +75,13 @@ def lobby():
     living()
 
   else:
-    print("The mysterious figure cathces up and you died... Game over!")
+    print("The mysterious figure cathces up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
     print(" \   \.")
     print("  `~~~'")
+    over()
     
 
 def kitchen():
@@ -85,12 +97,13 @@ def kitchen():
     upstairs()
 
   else:
-    print("The mysterious figure cathces up and you died... Game over!")
+    print("The mysterious figure cathces up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
     print(" \   \.")
     print("  `~~~'")
+    over()
 
 
 def upstairs():
@@ -98,12 +111,13 @@ def upstairs():
   choice = input("You see 3 doors, which one wil you do you want to open? - 1/2/3")
 
   if choice == "1":
-    print("You walk into a bedroom and see a ghost, it comes up to you and you died... Game over!")
+    print("You walk into a bedroom and see a ghost, it comes up to you and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
     print(" \   \.")
     print("  `~~~'")
+    over()
 
   elif choice == "2":
     print("You go into a bedroom and see another door")
@@ -114,12 +128,13 @@ def upstairs():
     three()
 
   else:
-    print("The mysterious figure cathces up and you died... Game over!")
+    print("The mysterious figure cathces up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
     print(" \   \.")
     print("  `~~~'")
+    over()
 
 
 def two():
@@ -131,12 +146,13 @@ def two():
     basement()
 
   else:
-    print("The mysterious figure cathces up and you died... Game over!")
+    print("The mysterious figure cathces up and you died")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
     print(" \   \.")
     print("  `~~~'")
+    over()
 
 
 def three():
@@ -151,12 +167,13 @@ def three():
     upstairs()
 
   else:
-    print("The mysterious figure cathces up and you died... Game over!")
+    print("The mysterious figure cathces up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
     print(" \   \.")
     print("  `~~~'")
+    over()
 
 
 def kick():
@@ -189,12 +206,13 @@ def living():
       break
     
     else:
-      print("The mysterious figure cathces up and you died... Game over!")
+      print("The mysterious figure cathces up and you died!")
       print(" .-.")
       print("(o o) boo!")
       print("| O \./")
       print(" \   \.")
       print("  `~~~'")
+      over
 
 
 def basement():
@@ -211,12 +229,13 @@ def basement():
     garden()
 
   else:
-    print("The mysterious figure cathces up and you died... Game over!")
+    print("The mysterious figure cathces up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
     print(" \   \.")
     print("  `~~~'")
+    over()
 
 
 def close():
@@ -231,16 +250,18 @@ def close():
     garden()
 
   else:
-    print("The mysterious figure cathces up and you died... Game over!")
+    print("The mysterious figure cathces up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
     print(" \   \.")
     print("  `~~~'")
+    over()
 
 
 def zombies():
-  print("The zombies didn't like you not social distancing so they killed you... Game over!")
+  print("The zombies didn't like you not social distancing so they killed you!")
+  over()
 
 
 def garden():
@@ -263,39 +284,19 @@ def garden():
 
   if choice == "l":
     print("When you walk up to the lake it feels cold and eerie and someone from behind pushes you into it! ")
-    print("     .-.                                    ,-.")
-    print("  .-(   )-.                              ,-(   )-.")
-    print(" (     __) )-.                        ,-(_      __)")
-    print("  `-(       __)                      (_    )  __)-'")
-    print("    `(____)-',                        `-(____)-'")
-    print("  - -  :   :  - -")
-    print("      / `-' \.")
-    print("    ,    |   .")
-    print("         .                         _")
-    print("                                  >')")
-    print("               _   /              (\\         (W)")
-    print("              =') //               = \     -. `|'")
-    print("               ))////)             = ,-      \(| ,-")
-    print("              ( (///))           ( |/  _______\|/____")
-    print("~~~~~~~~~~~~~~~`~~~~'~~~~~~~~~~~~~\|,-'::::::::::::::")
-    print("            _                 ,----':::::::::::::::::")
-    print("         {><_'c   _      _.--':MJP:::::::::::::::::::")
-    print("__,'`----._,-. {><_'c  _-':::::::::::::::::::::::::::")
-    print(":.:.:.:.:.:.:.\_    ,-'.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:")
-    print(".:.:.:.:.:.:.:.:`--'.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.")
-    print(".....................................................")
     lake()
 
   elif choice == "d":
     print("You made it out of the house alive. You won!")
   
   else:
-    print("The mysterious figure cathces up and you died... Game over!")
+    print("The mysterious figure cathces up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
     print(" \   \.")
     print("  `~~~'")
+    over()
     
   
 def lake():
@@ -323,7 +324,8 @@ def lake():
     top()
     
   else:
-    print("You couldn't make a decision so you drowned... Game over!")
+    print("You couldn't make a decision so you drowned!")
+    over()
     
     
 def cave():
@@ -340,12 +342,13 @@ def cave():
     top()
     
   else:
-    print("The mysterious figure cathces up and you died... Game over!")
+    print("The mysterious figure cathces up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
     print(" \   \.")
     print("  `~~~'")
+    over()
     
     
 def corridor():
@@ -362,12 +365,13 @@ def corridor():
     top()
     
   else:
-    print("The mysterious figure cathces up and you died... game over!")
+    print("The mysterious figure cathces up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
     print(" \   \.")
     print("  `~~~'")
+    over()
     
    
 def top():
@@ -384,12 +388,13 @@ def top():
     print("You made it out of the house alive. You won!")
                   
   else:
-    print("The mysterious figure cathces up and you died... Game over!")
+    print("The mysterious figure cathces up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
     print(" \   \.")
     print("  `~~~'")
+    over()
                   
        
 def hallway():
@@ -400,7 +405,8 @@ def hallway():
     choice = input ("Which door do you want to go through - l/r?")
 
     if choice == "l":
-      print("You walk into a little sitting room and see the mysterious figure in the corner, it runs up to you and you die... game over!")
+      print("You walk into a little sitting room and see the mysterious figure in the corner, it runs up to you and you die!")
+      over()
       break
 
     elif choice == "r":
@@ -423,7 +429,25 @@ def figure():
     print("You made it out of the house alive. You won!")
                   
   elif choice == "f":
-     print("He bet you up and you died... Game over!")
-                  
+     print("He bet you up and you died!")
+     over()
+
+
+def over():
+
+  print("The mysterious figure catches up and you died!")
+
+  from time import sleep
+  import pygame
+  pygame.init()
+
+  gameDisplay = pygame.display.set_mode((500,350))
+
+  overImg = pygame.image.load('Game Over.jpg')
+
+  gameDisplay.blit(overImg, (0,0))
+  pygame.display.update()
+  sleep(2)
+                
   
-outside()
+start()
