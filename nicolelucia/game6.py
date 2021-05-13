@@ -8,7 +8,7 @@ score = 0
 def intro():
     print("\033[0;37;40m Welcome to our game!!! \n")
     print(
-        "You will go around an abandoned house and try not to die. If you die you have to start again. The aim of the game is to get out of the abandoned house with ascore of at least 20 points. If you die, you lose a point and you have to repeat. Have fun:)"
+        "You will go around an abandoned house and try not to die. If you die you have to start again. The aim of the game is to get out of the abandoned house with a score of at least 20 points. If you die, you lose a point and you have to repeat. Have fun:)"
     )
 
 
