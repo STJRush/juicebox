@@ -320,9 +320,9 @@ def livingroom():
         tv()
 
         choice = input(
-            "Do you go to the backgarden or switch on the TV? Backgarden/TV ")
+            "Do you go to the backgarden or switch on the TV? backgarden/TV ")
 
-        if choice == "backgarden":
+        if choice == "backgarden" or "Backgarden":
             print(
                 "You open the glass door and step out onto the chilled patio. You are confronted with two options."
             )
@@ -367,10 +367,10 @@ def shedtwo():
         shed()
 
         choice = input(
-            "You can either go on the grass or into the shed.Which do you choose? Grass/Shed"
+            "You can either go on the grass or into the shed.Which do you choose? grass/shed"
         )
 
-        if choice == "shed":
+        if choice == "shed" or "Shed":
             print(
                 "You walk into the wooden shed and see shelves piled with gardening tools and building tools.There are cobwebs in every corner and everything is laced in dust.You realise there's nothing here and retreat back inside"
             )
@@ -379,7 +379,7 @@ def shedtwo():
             break
             #i put break to stop the loop
 
-        if choice == "grass":
+        if choice == "grass" or "Grass":
             print(
                 " You step onto the dewy grass and immediately get stung by a bee. You're allergic to bee stings and your body starts puffing up. Your throat slowly closes up, causing you to slowly and painfully suffocate to death.You died. "
             )
@@ -414,9 +414,9 @@ def kitchen():
 
         knife()
 
-        choice = input("Where will you go?Upstairs/Kitchen")
+        choice = input("Where will you go?upstairs/kitchen")
 
-        if choice == "upstairs":
+        if choice == "upstairs" or "Upstairs":
             print("you go upstairs and see 4 doors, you try each one of them but all of them are locked except for one, you open the ony unlocked door to find...")
             
             score = score + 5
@@ -424,7 +424,7 @@ def kitchen():
             #i put break to stop the loop
             
 
-        if choice == "kitchen":
+        if choice == "kitchen" or "Kitchen":
             print("You walk into a dingy kitchen and immediately trip over a misplaced stool. You fall and hit your head on the hard floor. Your head starts gushing blood and you bleed to death.")
             print("\033[2;34;40m REPEAT \n")
 
