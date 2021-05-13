@@ -444,6 +444,20 @@ def win():
   gameDisplay.blit(winImg, (0,0))
   pygame.display.update()
   sleep(2)
+    
+def gameover():
+  from time import sleep
+  import pygame
+  pygame.init()
+
+  gameDisplay = pygame.display.set_mode((500,350))
+
+  gameImg = pygame.image.load('game over.png')
+
+  gameDisplay.blit(gameImg, (-120,-35))
+  pygame.display.update()
+  sleep(2)
+
 
 def finalscore():
     print("\033[2;33;40m YOU FINISHED!!!!!!!1 \n")
