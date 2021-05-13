@@ -56,7 +56,20 @@ choice = input("y/n ")
 
 if choice =="y":
    print("a dead lynx is in the shower,the centaur says he has no arrows left to defend us, now it all makes sense, the centaur your defender is the last impostor, you kill the centaur with his own bow, his last words were, keep your friends close, but your enemys closer. you win. Congratulations")
+from time import sleep
+import pygame
+pygame.init()
 
+gameDisplay = pygame.display.set_mode((1300,1300))
+
+notcastleBackground = pygame.image.load('GameOver.jpg')
+
+gameDisplay.blit(notcastleBackground, (0,0))
+pygame.display.update()
+sleep(100)
+
+pygame.quit()
+quit()
 if choice =="n":
   print("You are dead. Survive next time. Please retry and win next time.")
   gameover()
