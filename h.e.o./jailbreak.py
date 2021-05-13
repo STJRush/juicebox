@@ -3,6 +3,23 @@ from colorama import Fore
 import sys, time
 from time import sleep
 import random
+import pygame
+pygame.init()
+
+#sets the window size
+gameDisplay = pygame.display.set_mode((400,300))
+
+
+#loads in your pics to use later
+locationmarker = pygame.image.load('google-pin-icon-12.png')
+jailmap = pygame.image.load('jail-concept-final.png')
+
+def printlocation(x,y):
+  gameDisplay.blit(jailmap, (0,0))
+  pygame.display.update()
+  gameDisplay.blit(locationmarker, (x,y))
+  pygame.display.update()
+  sleep(2)
 
 #code for encounters
 def Encounterr():
@@ -92,7 +109,7 @@ def Encounterr():
 
 #the code for the jailcell part of the game
 def jail_cell():
-
+  printlocation(145,240)
   while True:
     
     #just some random backstory
@@ -136,7 +153,7 @@ def gameover():
 
 #the code for section two, the corridot of left and right
 def corridor():
-
+  printlocation(145,210)
   Encounterr()
 
   while True:
@@ -188,7 +205,7 @@ def corridor():
 
 #this is the code for the cafeteria section
 def cafeteria():
-
+  printlocation(150,130)
   Encounterr()
 
   while True:
@@ -242,7 +259,7 @@ def cafeteria():
 
 #this is the code for the gym section
 def gym():
-
+  printlocation(15,130)
   Encounterr()
 
   while True:
@@ -295,23 +312,27 @@ def gym():
 
 #this is the code for the gym section
 def library():
-
+  printlocation(20,10)
   Encounterr()
 
   while True:
 
     print("   ")
-
+    
+    #this code just asks which direction you want to go
     for c in Fore.RED + "You're at the library, what do your do? e(go east), ne(go north east), s(go south)":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
     print
 
+    #input your answer you noob
     choice1 = input("  ")
 
+    #so you chose east lmao
     if choice1 == "e":
      
+      #hey look some random dialouge
       for c in Fore.YELLOW + "you walk east. you open a solid metal door and walk outside into the yard.":
         sys.stdout.write(c)
         sys.stdout.flush()
@@ -321,7 +342,7 @@ def library():
       yard()
       break
 
-
+    #oh god surgical equipment now that sends shivers down the spine
     elif choice1 == "ne":
       for c in Fore.YELLOW + "you see hospital beds and surgery equipment.":
         sys.stdout.write(c)
@@ -331,16 +352,21 @@ def library():
       hospital()
       break
 
+    #never thought you would go with south
     elif choice1 == "s":
+      
+      #how much dialouge is in this stupid game smh
       for c in Fore.YELLOW + "you walk south, you found the gym":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
       print
+      
       gym()
       break
 
 
+    #how dare you rebel, time to activate dictator mode scrub
     else:
       for c in Fore.YELLOW + "Not an option buddy, get lost":
         sys.stdout.write(c)
@@ -350,7 +376,7 @@ def library():
 
 #this is the code for the yard section
 def yard():
-
+  printlocation(150,60)
   Encounterr()
 
   while True:
@@ -425,7 +451,7 @@ def yard():
 
 #this is the code for the yard section
 def hospital():
-
+  printlocation(100,0)
   Encounterr()
 
   while True:
@@ -469,6 +495,7 @@ def hospital():
       break
 
 
+    #guess hou chose east again you fool uou absolute imbicile
     elif choice1 == "e":
       for c in Fore.YELLOW + "you walk into a room decorated with carpets and paintings":
         sys.stdout.write(c)
@@ -486,7 +513,7 @@ def hospital():
       print
 
 def lobby():
-
+  printlocation(220,0)
   Encounterr()
 
   while True:
@@ -548,7 +575,7 @@ def lobby():
       print
     
 def meeting_room():
-
+  printlocation(320,120)
   Encounterr()
 
   while True:
@@ -600,7 +627,7 @@ def meeting_room():
       print
 
 def guards_office():
-
+  printlocation(340,0)
   Encounterr()
 
   while True:
@@ -680,4 +707,3 @@ def exit_door():
     print
     gameover()
 jail_cell()
-
