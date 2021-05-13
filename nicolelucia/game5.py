@@ -415,7 +415,7 @@ def kitchen():
 
         knife()
 
-        choice = input("Where will you go?Upstairs/Kitchen")
+        choice = input("Where will you go?upstairs/kitchen")
 
         if choice == "upstairs":
             print("you go upstairs and see 4 doors, you try each one of them but all of them are locked except for one, you open the ony unlocked door to find...")
