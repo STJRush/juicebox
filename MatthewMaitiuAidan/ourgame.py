@@ -25,8 +25,8 @@ def goblinfight1n1():
   pygame.display.update()
   sleep(5)
 
-  pygame.quit()
-  quit()
+  
+  
   choice5 = input("you have died, restart Y/Y")
   if choice5 == "Y":
     outside()
@@ -90,6 +90,15 @@ def dragonfight3y():
 
 def dragonfight3n():
   print("The Drip Dragon shoots you lol. He did not burst through a wall to challenge you just for nothing to happen. tut tut tut you should have a least accepted his challenge")
+  gameoverdisplay = pygame.display.set_mode((800,500))
+
+  gameover = pygame.image.load('death3.jpg')
+
+  gameoverdisplay.blit(gameover, (0,0))
+  pygame.display.update()
+  sleep(5)
+
+  
   
   choice = input("You have died, Restart? Y/N")
 
@@ -117,11 +126,11 @@ def tutorialroom():
 def outside():
   mixer.init()
 
-mixer.music.load("251_Candledeep.mp3")
+ mixer.music.load("251_Candledeep.mp3")
 
-mixer.music.play()
-sleep(100)
-mixer.music.stop()
+ mixer.music.play()
+ sleep(100)
+ mixer.music.stop()
 
   while True:  
     print("THE DUNGEON")
@@ -165,8 +174,7 @@ mixer.music.stop()
     pygame.display.update()
     sleep(5)
 
-    pygame.quit()
-    quit()
+    
     outside() 
     
     else:
@@ -179,8 +187,7 @@ mixer.music.stop()
      pygame.display.update()
      sleep(5)
 
-     pygame.quit()
-     quit()
+   
      outside()
     
      def kevinfight1():
@@ -197,8 +204,7 @@ mixer.music.stop()
       pygame.display.update()
       sleep(5)
 
-      pygame.quit()
-      quit()
+      
       outside()
       
   elif choice == "N":
@@ -211,8 +217,7 @@ mixer.music.stop()
    pygame.display.update()
    sleep(5)
 
-   pygame.quit()
-   quit()
+  
    outside()
    
   
@@ -226,8 +231,7 @@ mixer.music.stop()
    pygame.display.update()
    sleep(5)
 
-   pygame.quit()
-   quit()
+   
    outside()
    
     
@@ -241,9 +245,7 @@ mixer.music.stop()
    pygame.display.update()
    sleep(5)
 
-   pygame.quit()
-   quit()
-   outside()
+   
    outside()
     
 
@@ -257,8 +259,7 @@ mixer.music.stop()
     pygame.display.update()
     sleep(5)
 
-    pygame.quit()
-    quit()
+    
     outside()
 
  
@@ -277,14 +278,21 @@ mixer.music.stop()
     pygame.display.update()
     sleep(5)
 
-    pygame.quit()
-    quit()
+    
     outside()
     
 
   elif choice == "A":
    print("KEVIN DOES NOT APPROVE OF THIS MOVE. HE ZAPS YOU WITH HIS KEVIN LARVA MAGIC...YOU DIE  ")
-   
+   gameoverdisplay = pygame.display.set_mode((800,500))
+
+   gameover = pygame.image.load('death3.jpg')
+
+   gameoverdisplay.blit(gameover, (0,0))
+   pygame.display.update()
+   sleep(5)
+
+  
    outside()
  
 
@@ -302,8 +310,7 @@ mixer.music.stop()
        pygame.display.update()
        sleep(5)
 
-       pygame.quit()
-       quit()
+       
        outside()
     
 
