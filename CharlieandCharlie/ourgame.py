@@ -289,7 +289,8 @@ def garden():
     lake()
 
   elif choice == "d":
-    print("You made it out of the house alive. You won!")
+    print("You made it out of the house alive!")
+    win()
   
   else:
     print("The mysterious figure cathces up and you died!")
@@ -448,6 +449,21 @@ def over():
   overImg = pygame.image.load('Game Over.jpg')
 
   gameDisplay.blit(overImg, (0,0))
+  pygame.display.update()
+  sleep(2)
+
+
+def win():
+
+  from time import sleep
+  import pygame
+  pygame.init()
+
+  gameDisplay = pygame.display.set_mode((500,350))
+
+  winImg = pygame.image.load('You Win.jpg')
+
+  gameDisplay.blit(winImg, (0,0))
   pygame.display.update()
   sleep(2)
                 
