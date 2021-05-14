@@ -670,23 +670,34 @@ def exit_door():
 
   while True:
     try:
-      Rating = input("what do you rate this game outta 10? ")
+      for c in Fore.WHITE + "what do you rate this game outta 10?":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+      Rating = input(" ")
       RealRating = int(Rating)
       break
     except ValueError:
-      print("not a number idiot")
-  for c in Fore.WHITE + "You encountered a boss":
+      for c in Fore.WHITE + "not a number you idiot":
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.07)
+      print
+      print(" ")
+  for c in Fore.WHITE + "You encounter a boss.":
     sys.stdout.write(c)
     sys.stdout.flush()
     time.sleep(0.07)
   print
-  for c in Fore.WHITE + "the health of this boss is":
+  print(" ")
+  for c in Fore.WHITE + "the health of this boss is ":
     sys.stdout.write(c)
     sys.stdout.flush()
     time.sleep(0.07)
   print
   print(10)
-  for c in Fore.WHITE + "rolling your damage....... you hit the enemy with your raiting!":
+  for c in Fore.WHITE + "rolling your damage....... you hit the enemy with your rating!":
     sys.stdout.write(c)
     sys.stdout.flush()
     time.sleep(0.07)
