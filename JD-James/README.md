@@ -15,6 +15,10 @@ You follow down the pathway until you see a huge gate, that is grown over with v
 You slowly open the gate and you are met with the sight of a huge run down structure, you turn on your flashlight, and slowly walk to the door of the manor
 This is where your story begins adevnturer... Good Luck
 
+Game link
+https://replit.com/join/lngxwlfl-jameslanganrush
+
+
 
 
 #GAME STARTS HERE
