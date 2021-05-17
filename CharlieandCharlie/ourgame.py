@@ -37,7 +37,7 @@ sleep(2)
 
 def outside():
   
-  choice = input ("\033[1;32;40m You see a mysterious house and decide to walk up to it and see a key on the ground. Do you want to pick up the key? - y/n? \n")
+  choice = input ("\033[1;34;40m You see a mysterious house and decide to walk up to it and see a key on the ground. Do you want to pick up the key? - y/n? \n")
 
   if choice == "y":
     keyList = []
@@ -87,7 +87,8 @@ def lobby():
     
 
 def kitchen():
-  choice = input ("In the kitchen you see a stairs going up and a stairs going down, which way do you want to go? - u/d?")
+  
+  choice = input ("\033[1;34;40m In the kitchen you see a stairs going up and a stairs going down, which way do you want to go? - u/d? \n")
 
   if choice == "d":
     
