@@ -15,6 +15,10 @@ with multiple ways of getiing away our game is very fun and if you want to play 
 
 - https://replit.com/@DublinCharlieS/CBA#main.py
 
+Our link to the google slides on our project
+
+- https://docs.google.com/presentation/d/1NUPIG6O8F9hgWvrQ_1rgao9rJxnCPXGdXETr0NVm_jc/edit?usp=sharing
+
 
 
 
