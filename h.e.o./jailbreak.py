@@ -13,7 +13,6 @@ gameDisplay = pygame.display.set_mode((400,300))
 #loads in your pics to use later
 locationmarker = pygame.image.load('google-pin-icon-12.png')
 jailmap = pygame.image.load('jail-concept-final.png')
-
 def printlocation(x,y):
   gameDisplay.blit(jailmap, (0,0))
   pygame.display.update()
@@ -58,7 +57,7 @@ def Encounterr():
 
     #this is the code to decide if you did enough damage to eliminate the enemy
     if random_number >= random_minimum:
-      for c in Fore.WHITE + "You hit the enemy with enough force to eliminate him":
+      for c in Fore.WHITE + "You hit the enemy with enough force to eliminate it":
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.07)
@@ -697,7 +696,7 @@ def exit_door():
     time.sleep(0.07)
   print
   print(10)
-  for c in Fore.WHITE + "rolling your damage....... you hit the enemy with your rating!":
+  for c in Fore.WHITE + "rolling your damage....... you hit the boss with your rating!":
     sys.stdout.write(c)
     sys.stdout.flush()
     time.sleep(0.07)
@@ -705,7 +704,7 @@ def exit_door():
   print(" ")
 
   if RealRating >= 10:
-    for c in Fore.WHITE + "You hit the enemy with enough force to eliminate him. thanks for playing :)":
+    for c in Fore.WHITE + "You hit the boss with enough force to eliminate it. thanks for playing :)":
       sys.stdout.write(c)
       sys.stdout.flush()
       time.sleep(0.07)
