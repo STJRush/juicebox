@@ -8,7 +8,6 @@ def intro():
   print("Welcome to our game, you will go around an abandoned house and try not to die. If you die you have to start again. The aim of the game is to get out of the abandoned house with at least 20 points. If you die, you have to start again. Have fun:)")
 
 
-
 from time import sleep
 
 
