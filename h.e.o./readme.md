@@ -7,5 +7,5 @@ for this game the idea is simple
 there will be three endings a good ending, a bad ending and a neutral ending
 if you want to try out the current BETA stage go ahead, if you find any bugs or got ideas feel free to email [18EPojarkovas@stjosephsrush.com]
 
-link to repl: https://replit.com/@DEV64Oskar/house-thingy
+link to repl: https://replit.com/@DEV6464/house-thingy
 
