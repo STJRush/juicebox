@@ -9,16 +9,16 @@ pygame.init()
 #sets the window size
 gameDisplay = pygame.display.set_mode((400,300))
 
-
 #loads in your pics to use later
 locationmarker = pygame.image.load('google-pin-icon-12.png')
+
 jailmap = pygame.image.load('jail-concept-final.png')
+
 def printlocation(x,y):
   gameDisplay.blit(jailmap, (0,0))
   pygame.display.update()
   gameDisplay.blit(locationmarker, (x,y))
   pygame.display.update()
-  sleep(2)
 
 #code for encounters
 def Encounterr():
