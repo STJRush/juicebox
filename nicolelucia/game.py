@@ -9,7 +9,6 @@ def intro():
 
 from time import sleep
 
-
 def start():
   pass
   #i started a loop
