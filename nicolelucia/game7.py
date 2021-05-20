@@ -11,7 +11,6 @@ def intro():
         "You will go around an abandoned house and try not to die. If you die you have to start again. The aim of the game is to get out of the abandoned house with a score of at least 25 points. If you die, you lose a point and you have to repeat. Have fun:)"
     )
 
-
 from time import sleep
 
 def start():
