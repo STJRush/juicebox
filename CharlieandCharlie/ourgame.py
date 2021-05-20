@@ -111,7 +111,7 @@ def kitchen():
 
 def upstairs():
 
-  choice = input("You see 3 doors, which one will you do you want to open? - 1/2/3")
+  choice = input("You see 3 doors, which one do you want to open? - 1/2/3")
 
   if choice == "1":
     print("You walk into a bedroom and see a ghost, it comes up to you and you died!")
