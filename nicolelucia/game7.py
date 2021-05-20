@@ -48,7 +48,6 @@ def start():
         else:
             print("start again")
 
-
 #this is a function for a picture
 def trees():
     print(
