@@ -161,7 +161,6 @@ def doors():
       score = score + 5
       break
       #i put break to stop the loop
-  
 #this is a function for a picture
 def tv():
   print("     O        O      ")
