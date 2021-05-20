@@ -4,7 +4,6 @@ keyList = []
 global score
 score = 0
 
-
 #this is a function for the intro to my game
 def intro():
     print("\033[0;37;40m Welcome to our game!!! \n")
