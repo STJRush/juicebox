@@ -15,7 +15,7 @@ def start():
   
   while True:
     
-    
+   
     choice =input("type start to play ")
     if choice =="start":
       print("   _____     _______   ")
