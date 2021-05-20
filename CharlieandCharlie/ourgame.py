@@ -55,7 +55,7 @@ def outside():
     lobby() 
 
   else:
-    print("The mysterious figure cathces up and you died!")
+    print("The mysterious figure catches up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
@@ -77,7 +77,7 @@ def lobby():
     living()
 
   else:
-    print("The mysterious figure cathces up and you died!")
+    print("The mysterious figure catches up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
@@ -100,7 +100,7 @@ def kitchen():
     upstairs()
 
   else:
-    print("The mysterious figure cathces up and you died!")
+    print("The mysterious figure catches up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
@@ -111,7 +111,7 @@ def kitchen():
 
 def upstairs():
 
-  choice = input("You see 3 doors, which one wil you do you want to open? - 1/2/3")
+  choice = input("You see 3 doors, which one will you do you want to open? - 1/2/3")
 
   if choice == "1":
     print("You walk into a bedroom and see a ghost, it comes up to you and you died!")
@@ -131,7 +131,7 @@ def upstairs():
     three()
 
   else:
-    print("The mysterious figure cathces up and you died!")
+    print("The mysterious figure catches up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
@@ -149,7 +149,7 @@ def two():
     basement()
 
   else:
-    print("The mysterious figure cathces up and you died")
+    print("The mysterious figure catches up and you died")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
@@ -170,7 +170,7 @@ def three():
     upstairs()
 
   else:
-    print("The mysterious figure cathces up and you died!")
+    print("The mysterious figure catches up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
@@ -196,7 +196,7 @@ def living():
     choice = input ("There is nothing interesting in the living room, will you stay or leave - s/l?")
 
     if choice == "s":
-      print("The mysterious figure cathces up and you died... Game over!")
+      print("The mysterious figure catches up and you died... Game over!")
       print(" .-.")
       print("(o o) boo!")
       print("| O \./")
@@ -209,7 +209,7 @@ def living():
       break
     
     else:
-      print("The mysterious figure cathces up and you died!")
+      print("The mysterious figure catches up and you died!")
       print(" .-.")
       print("(o o) boo!")
       print("| O \./")
@@ -232,7 +232,7 @@ def basement():
     garden()
 
   else:
-    print("The mysterious figure cathces up and you died!")
+    print("The mysterious figure catches up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
@@ -253,7 +253,7 @@ def close():
     garden()
 
   else:
-    print("The mysterious figure cathces up and you died!")
+    print("The mysterious figure catches up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
@@ -294,7 +294,7 @@ def garden():
     win()
   
   else:
-    print("The mysterious figure cathces up and you died!")
+    print("The mysterious figure catches up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
@@ -346,7 +346,7 @@ def cave():
     top()
     
   else:
-    print("The mysterious figure cathces up and you died!")
+    print("The mysterious figure catches up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
@@ -369,7 +369,7 @@ def corridor():
     top()
     
   else:
-    print("The mysterious figure cathces up and you died!")
+    print("The mysterious figure catches up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
@@ -392,7 +392,7 @@ def top():
     print("You made it out of the house alive. You won!")
                   
   else:
-    print("The mysterious figure cathces up and you died!")
+    print("The mysterious figure catches up and you died!")
     print(" .-.")
     print("(o o) boo!")
     print("| O \./")
