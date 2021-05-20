@@ -1,75 +1,102 @@
+from time import sleep 
+
 def gameover():
   print("you died, please try again")
   raise exit()
  
-
+print("\033[0;31;40m \n")
 print("to win you must kill 3 impostors")
 
+print("\033[0;37;40m\n")
 print("You see your front door and there is a bloody arrow on the floor")
 
-choice = input("Forward y/n? ")
+choice = input("Forward yes or no? ")
 
-if choice =="Y":print("you walk forward")
+print("\033[0;31;40m \n")
+if choice =="yes":print("you walk forward")
 print("You go right through the door anyways, a wild centaur will guide you through the hall to the kitchen")
-if choice =="n":
-    while True:
-     print:("game over, you didnt wanna play, please run again")
+if choice =="no": 
+  while True:
+   print("game over, you didn't wanna play, please run again")
 print("You are in the hall and you see a door to the left. Do you go in?")
 
-choice = input("y/n? ")
+print("\033[0;37;40m \n")
+choice = input("yes or no? ")
 
-
-if choice =="y":
+print("\033[0;31;40m \n")
+if choice =="yes":
    while True:
      print("game over you died")
       
  
 else:print("you have not failed yet")
 
-if choice =="n":
+if choice =="no":
    print("gordon ramsay is cooking pizza with pineapple on it do you want some?")
    
+print("\033[0;37;40m \n")
+choice = input("yes or no? ")
 
-choice = input("y/n ")
-
-if choice =="y":
+print("\033[0;31;40m \n")
+if choice =="yes":
    print("gordon ramsay thinks pineapple doesnt belong on pizza, he is an impostor,you get murdered by his pizza cutter, game over, please run again")
    gameover()
 
-if choice =="n":
+if choice =="no":
    print("the centaur kills gordon with his own pizza cutter, he tells you gordon ramsay hates pineapple on pizza and that he was an impostor")
 
 print("would you like to take the elevator or the stairs")
 
-choice = input("e/s ")
+print("\033[0;37;40m \n")
+choice = input("elevator or stairs? ")
 
-if choice =="s":
-    print("when you arrive at the 3rd floor the centaur needs a bathroom break, when hes finished he asks you to come in and check, something crazy has happened do you go in?")
+print("\033[0;31;40m \n")
+if choice =="stairs":
+    print("when you arrive at the 3rd floor the centaur needs a bathroom break, when hes finished he asks you to come in and check, something crazy has happened do you go in? ")
 
-if choice =="e":
+if choice =="elevator":
     print("the elevator has broken and your inside, the centaur melee attacks you with his bow and you die, game over")
     gameover()
 
-print ("do you go in")
-choice = input("y/n ")
+print("\033[0;37;40m \n")
+choice = input("yes or no? ")
 
+print("\033[0;31;40m \n")
+if choice =="yes":
+   print("a lynx is in the shower,he is weak, near the verge of death, the centaur hands you a sword and tells you to finish him. ")
 
-if choice =="y":
-   print("a dead lynx is in the shower,the centaur says he has no arrows left to defend us, now it all makes sense, the centaur your defender is the last impostor, you kill the centaur with his own bow, his last words were, keep your friends close, but your enemys closer. you win. Congratulations")
-from time import sleep
-import pygame
-pygame.init()
-
-gameDisplay = pygame.display.set_mode((1300,1300))
-
-notcastleBackground = pygame.image.load('GameOver.jpg')
-
-gameDisplay.blit(notcastleBackground, (0,0))
-pygame.display.update()
-sleep(100)
-
-pygame.quit()
-quit()
-if choice =="n":
+if choice =="no":
   print("You are dead. Survive next time. Please retry and win next time.")
   gameover()
+
+sleep(1.2)
+
+bagList = []
+
+print("Do you want to pick up this sword?")
+
+print("\033[0;37;40m \n")
+choice = input ("yes or no? ")
+
+print("\033[0;32;40m \n")
+if choice == "yes":print("SWORD COLLECTED")
+
+print("\033[0;31;40m \n")
+if choice == "no":
+  print("You walk away from the sword")
+  gameover()
+
+bagList.append("sword")
+
+
+
+if "sword" in bagList:
+  sleep(1.2)
+  print("The centuar shouts 'FINISH HIM', do you want to finish him? ")
+
+print("\033[0;37;40m \n")
+choice = input ("yes or no? ")
+
+if choice =="yes":print("You stab him in the chest, GAME OVER YOU WIN!") 
+if choice =="no":print("You refuse to finish the centuar, you walk away from the castle, you coward... GAME OVER.")
+exit()
