@@ -1,5 +1,6 @@
 #i am trying to make a global thing to keep the score
 keyList = []
+
 global score
 score = 0
 
